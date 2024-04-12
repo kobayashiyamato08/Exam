@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<h1>ログアウト</h1>
+<p><c:out value="${}"/>さんがログイン中です。</p>
+
 </head>
 <body>
 
