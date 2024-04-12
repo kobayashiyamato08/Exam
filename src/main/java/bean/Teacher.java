@@ -15,7 +15,7 @@ public class Teacher implements java.io.Serializable {
 		return password;
 	}
 	
-	public String getNmae() {
+	public String getName() {
 		return name;
 	}
 	
