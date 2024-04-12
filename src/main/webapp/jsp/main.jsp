@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<a href="menu.jsp"></a>
+
 
 </body>
 </html>

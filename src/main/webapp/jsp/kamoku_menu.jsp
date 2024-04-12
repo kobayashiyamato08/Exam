@@ -4,9 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+
 </head>
 <body>
+
+<a href="kamoku_tourok.jsp">科目登録</a>
+<a href="kamoku_henkou.jsp">科目変更</a>
+<a href="kamoku_sakujo.jsp">科目削除</a>
+<a href="kamokubetsu_ichiran.jsp">科目別成績一覧</a>
 
 </body>
 </html>
