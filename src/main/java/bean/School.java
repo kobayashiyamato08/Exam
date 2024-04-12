@@ -9,7 +9,7 @@ public class School implements java.io.Serializable {
 		return cd;
 	}
 	
-	public String getNmae() {
+	public String getName() {
 		return name;
 	}
 	
