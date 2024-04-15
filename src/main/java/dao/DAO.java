@@ -2,8 +2,7 @@ package dao;
 
 import java.sql.Connection;
 
-import jakarta.naming.InitialContext;
-import jakarta.sql.DataSource;
+import javax.naming.InitialContext;
 
 public class DAO {
 	static DataSource ds;
