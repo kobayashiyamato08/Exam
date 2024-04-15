@@ -8,6 +8,7 @@ public class LoginAction extends Action {
 	public String execute(
 		HttpServletRequest request,HttpServletResponse response
 		) throws Exception {
+			request.getSession();
 			return "login.jsp";
 	}
 }
