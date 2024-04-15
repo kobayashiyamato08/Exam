@@ -5,10 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <h1>ログアウト</h1>
-<p><c:out value="${}"/>さんがログイン中です。</p>
-
+<p>ログアウトをいたします。よろしいですか？</p>
 </head>
 <body>
-
+<input type="button" value="ログアウト">
 </body>
 </html>
