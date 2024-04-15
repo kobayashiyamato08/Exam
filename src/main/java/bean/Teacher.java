@@ -26,7 +26,7 @@ public class Teacher implements java.io.Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public void setNmae(String name) {
+	public void setName(String name) {
 		this.name= name;
 	}
 	public void setSchool(School school) {
