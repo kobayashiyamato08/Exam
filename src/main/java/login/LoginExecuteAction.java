@@ -23,7 +23,7 @@ public class LoginExecuteAction extends Action {
 //		情報が合致すればメニュー画面に遷移する
 		if (teacher!=null) {
 			session.setAttribute("teacher", teacher);
-			return "menu.jsp";
+			return "main.jsp";
 		}
 		
 //		失敗した場合はもう一度ログイン画面に遷移する
