@@ -24,10 +24,10 @@ public class Teacher implements java.io.Serializable {
 		this.id=id;
 	}
 	public void setPassword(String password) {
-		this.password=password;
+		this.password = password;
 	}
-	public void setName(String name) {
-		this.name=name;
+	public void setNmae(String name) {
+		this.name= name;
 	}
 	public void setSchool(School school) {
 		this.school=school;

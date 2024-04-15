@@ -8,6 +8,7 @@ public class MenuAction extends Action {
 	public String execute(
 		HttpServletRequest request,HttpServletResponse response
 		) throws Exception {
+			request.getSession();
 			return "menu.jsp";
 	}
 }
