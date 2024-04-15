@@ -7,32 +7,15 @@ import java.sql.ResultSet;
 import bean.Teacher;
 
 public class TeacherDAO extends DAO {
-	public Teacher get(String id) 
-		throws Exception {
-		Teacher teacher = null;
-		
-		Connection con=getConnection();
-		
-		PreparedStatement st;
-		st=con.prepareStatement(
-			"SELECT * FROM TEACHER WHERE ID = ?");
-		st.setString(1, id);
-		ResultSet rs=st.executeQuery();
-		
-		while (rs.next()) {
-			teacher=new Teacher();
-			teacher.setId(rs.getString("id"));
-		}
-		
-		return teacher;
-	}
-	
+//	ログイン機能loginの定義
 	public Teacher login(String id,String password) 
 		throws Exception {
+//		データベースにログインして
 		Teacher teacher = null;
 		
 		Connection con = getConnection();
 		
+//		SQL文を実行
 		PreparedStatement st;
 		st=con.prepareStatement(
 			"SELECT * FROM TEACHER WHERE ID = ? AND PASSWORD = ?");
@@ -40,6 +23,7 @@ public class TeacherDAO extends DAO {
 		st.setString(2, password);
 		ResultSet rs = st.executeQuery();
 		
+//		データベースの情報が一致すればログインできる
 		while (rs.next()) {
 			teacher = new Teacher();
 			teacher.setId(rs.getString("id"));
