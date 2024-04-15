@@ -4,9 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+
+<h1>メインページ</h1>
+
 </head>
 <body>
+
+<a href="menu.jsp"></a>
 
 </body>
 </html>

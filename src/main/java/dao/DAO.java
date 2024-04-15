@@ -3,6 +3,10 @@ package dao;
 import java.sql.Connection;
 
 import javax.naming.InitialContext;
+<<<<<<< HEAD
+=======
+import javax.sql.DataSource;
+>>>>>>> branch 'master' of https://github.com/kobayashiyamato08/Exam.git
 
 public class DAO {
 	static DataSource ds;
