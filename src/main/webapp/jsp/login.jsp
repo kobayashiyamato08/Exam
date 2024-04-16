@@ -14,9 +14,9 @@
  
  <body>
   <div class="login_form_btm">
-   <input type="id" name="user_id" placeholder="ユーザーIDを入力してください" style="width: 300px; margin: 0 auto;">   
+   <input type="id" name="user_id" placeholder="ユーザーIDを入力してください" style="width: 300px; margin: 0 auto;" required />   
     <br>   
-   <input type="password" name="password" placeholder="パスワードを入力してください" style="width: 300px; margin: 0 auto;">
+   <input type="password" name="password" placeholder="パスワードを入力してください" style="width: 300px; margin: 0 auto;" required />
   </div>
    <br>
    <button type="submit">ログイン</button>

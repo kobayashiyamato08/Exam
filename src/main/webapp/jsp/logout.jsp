@@ -2,12 +2,15 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<h1>ログアウト</h1>
-<p>ログアウトをいたします。よろしいですか？</p>
-</head>
-<body>
-<input type="button" value="ログアウト">
-</body>
+ <head>
+  <meta charset="UTR-8">
+   <form name="logout_form" action="./login.jsp">
+    <div class="logout_form_top">
+     <h1>ログアウト画面</h1>
+     <p>ログアウト致します。よろしいですか？</p>
+    </div>
+ </head>
+ <body>
+  <button type="submit">ログアウト</button>
+ </body>
 </html>

@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <%@ page pageEncoding="UTF-8" %>
 <style>
- html{overflow: hidden; height: 100%;}
- a{overflow: auto; height: 100%; width: 600px; margin: 0 auto; /* center */ padding: 0 560px;}
+ 
 </style>
 <html>
  <head>

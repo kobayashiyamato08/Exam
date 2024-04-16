@@ -13,6 +13,7 @@
 <a href="seiseki_ssakujo.jsp">成績削除</a>
 <a href="kamokubetsu_ichiran.jsp">科目別成績一覧</a>
 <a href="gakuseibetsu_ichiran.jsp">学生別成績一覧</a>
+<a href="main.jsp">戻る</a>
 
 </body>
 </html>
