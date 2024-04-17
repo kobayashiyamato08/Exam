@@ -15,7 +15,7 @@
  </div>
  
  <div class="form_kamoku">
-  <label class="subject_cd">クラス:</label>
+  <label class="subject_cd">科目コード:</label>
   <select name="subject_cd" required />
    <option value="" selected>選択してください。</option>
    <option value="a01">A01</option>
@@ -47,7 +47,7 @@
  </div>
  
  <div class="form_kamoku">
-  <label class="school_cd">学校:</label>
+  <label class="school_cd">学校コード:</label>
   <select name="school_cd" required />
    <option value="" selected>選択してください。</option>
    <option value="oom">oom</option>

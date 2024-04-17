@@ -11,7 +11,7 @@
  
 <form action="touroku.jsp" method="get" class="form_kamoku">
  <div class="form_kamoku">
-  <label for="school_cd">学校:</label>
+  <label for="school_cd">学校コード:</label>
   <select name="school_num" required />
    <option value="" selected>選択してください。</option>
    <option value="oom">oom</option>
@@ -20,7 +20,7 @@
  </div>
  
  <div class="form_kamoku">
-  <label class="cd">クラス:</label>
+  <label class="cd">科目コード:</label>
   <select name="cd" required />
    <option value="" selected>選択してください。</option>
    <option value="a01">A01</option>
@@ -52,7 +52,7 @@
  </div>
  
  <div class="form_kamoku">
-  <label class="subject_cd">教科名:</label>
+  <label class="subject_cd">科目名:</label>
   <select name="name" required />
    <option value="" selected>選択してください。</option>
    <option value="math">数学</option>

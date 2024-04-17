@@ -15,12 +15,12 @@
  </div>
  
  <div class="form_gakusei">
-  <label for="name">名前:</label>
+  <label for="name">学生名:</label>
   <input type="text" name="name"placeholder="名前を入力してください" required />
  </div>
  
  <div class="form_gakusei">
-  <label for="ent_year">年度:</label>
+  <label for="ent_year">入学年度:</label>
   <select name="ent_year" required />
    <option value="" selected>選択してください。</option>
    <option value="2014">2014</option>
@@ -48,7 +48,7 @@
  </div>
  
  <div class="form_gakusei">
-  <label for="class_num">クラス:</label>
+  <label for="class_num">クラス番号:</label>
   <select name="class" required />
    <option value="" selected>選択してください。</option>
    <option value="131">131</option>
@@ -58,7 +58,7 @@
  </div>
  
  <div class="_form_gakusei">
-  <label for="is_attend">在学の有無:</label>
+  <label for="is_attend">在学中フラグ:</label>
   <select name="is_attend" required />
    <option value="" selected>選択してください。</option>
    <option value="true">している</option>
@@ -67,7 +67,7 @@
  </div>
  
  <div class="form_gakusei">
-  <label for="school_cd">学校</label>
+  <label for="school_cd">学校コード:</label>
   <select name="school_num" required />
    <option value="" selected>選択してください。</option>
    <option value="oom">oom</option>
