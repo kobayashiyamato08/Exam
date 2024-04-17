@@ -1,4 +1,4 @@
-package login;
+package score_manage_system;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
