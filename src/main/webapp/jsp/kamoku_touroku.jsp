@@ -52,7 +52,7 @@
  </div>
  
  <div class="form_kamoku">
-  <label class="cd">教科名:</label>
+  <label class="subject_cd">教科名:</label>
   <select name="name" required />
    <option value="" selected>選択してください。</option>
    <option value="math">数学</option>
