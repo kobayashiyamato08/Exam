@@ -48,14 +48,14 @@ public class StudentDAO extends DAO {
 		Connection con = getConnection(); 
 		BaseSql="INSERT INTO STUDENT (NO,NAME,ENT_YEAR,CLASS_NUM) VALUES (?,?,?,?)";
 		PreparedStatement st=con.prepareStatement(BaseSql);
-		ResultSet rs = st.executeQuery();
 		Student s=new Student();
 		
 		st.setString(1,s.getNo());
 		st.setString(2,s.getName());
 		st.setInt(3,s.getEntYear());
 		st.setString(4,s.getClassNum());
-
+		
+		st.executeUpdate();
 		
 		st.close();
 		con.close();
@@ -71,12 +71,13 @@ public class StudentDAO extends DAO {
 		Connection con=getConnection();
 		BaseSql="UPDATE STUDENT SET NAME = ?,CLASS_NUM = ?,IS_ATTEND = ?";
 		PreparedStatement st=con.prepareStatement(BaseSql);
-		ResultSet rs=st.executeQuery();
 		Student s=new Student();
 		
 		st.setString(1,s.getName());
 		st.setString(2, s.getClassNum());
 		st.setBoolean(3, s.getIsAttend());
+		
+		st.executeUpdate();
 		
 		st.close();
 		con.close();
