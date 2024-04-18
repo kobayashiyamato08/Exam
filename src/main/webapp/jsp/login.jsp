@@ -7,10 +7,18 @@
 form {
     background-color: lightgreen;
 	width: 50%;
+	margin-top: 10%;
+	
+	font-size: 20px;
+	border: 5px black solid;
+}
+
+p{
+    font-size: 
 }
 </style>
 <center>
-	<form name="login_form" action="./main.jsp">
+	<form action="./main.jsp">
 		<div class="login_form_top">
 			<h1>ログイン画面</h1>
 			<p>
