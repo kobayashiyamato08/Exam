@@ -4,7 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<h1>科目別成績一覧</h1>
+<%@ include file="./kamoku_menu.jsp"%>
 </head>
 <body>
 
