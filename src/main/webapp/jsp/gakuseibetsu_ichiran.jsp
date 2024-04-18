@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +7,6 @@
 <h1>学生別成績一覧</h1>
 </head>
 <body>
- <%@ include file="./gakusei_menu.jsp" %>
+	<%@ include file="./gakusei_menu.jsp"%>
 </body>
 </html>
