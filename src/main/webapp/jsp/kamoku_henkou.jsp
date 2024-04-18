@@ -5,9 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <h1>科目変更</h1>
+<%@ include file="./kamoku_menu.jsp"%>
 </head>
 <body>
-	<%@ include file="./kamoku_menu.jsp"%>
 	<form action="henkou.jsp" method="get" class="form_kamoku">
 		<div class="form_kamoku">
 			<label for="school_cd">学校コード:</label> <select name="school_num"

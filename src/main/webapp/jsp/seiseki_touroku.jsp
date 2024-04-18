@@ -5,9 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <h1>成績登録</h1>
+<%@ include file="seiseki_menu.jsp"%>
 </head>
 <body>
-	<%@ include file="seiseki_menu.jsp"%>
 	<form action="touroku.jsp" method="get" class="form_seiseki">
 		<div class="form_gakusei">
 			<label for="student_no">学生番号:</label> <input type="text"

@@ -5,9 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <h1>科目登録</h1>
+<%@ include file="./kamoku_menu.jsp"%>
 </head>
 <body>
-	<%@ include file="./kamoku_menu.jsp"%>
 
 	<form action="touroku.jsp" method="get" class="form_kamoku">
 		<div class="form_kamoku">

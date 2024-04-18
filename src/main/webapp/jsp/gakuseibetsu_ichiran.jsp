@@ -5,8 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <h1>学生別成績一覧</h1>
+<%@ include file="./gakusei_menu.jsp"%>
 </head>
 <body>
-	<%@ include file="./gakusei_menu.jsp"%>
+
 </body>
 </html>
