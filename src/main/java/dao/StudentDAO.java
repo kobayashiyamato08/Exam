@@ -41,12 +41,47 @@ public class StudentDAO extends DAO {
 	}
 	
 //	学生テーブルに新たに情報を追加する操作
-	public List<Student> StudentCreate() {
-		return null; 
+	public List<Student> StudentCreate(String no,String name,int ent_year,String class_num) 
+		throws Exception {
+		
+		List<Student> list=new ArrayList<>();
+		Connection con = getConnection(); 
+		BaseSql="INSERT INTO STUDENT (NO,NAME,ENT_YEAR,CLASS_NUM) VALUES (?,?,?,?)";
+		PreparedStatement st=con.prepareStatement(BaseSql);
+		Student s=new Student();
+		
+		st.setString(1,s.getNo());
+		st.setString(2,s.getName());
+		st.setInt(3,s.getEntYear());
+		st.setString(4,s.getClassNum());
+		
+		st.executeUpdate();
+		
+		st.close();
+		con.close();
+		
+		return list;
 	}
-	
+
 //	学生テーブルの情報の編集を行う操作
-	public List<Student> StudentUpdate() {
-		return null;
+	public List<Student> StudentUpdate(String name,String class_num,boolean is_attend) 
+		throws Exception {
+		
+		List<Student> list=new ArrayList<>();
+		Connection con=getConnection();
+		BaseSql="UPDATE STUDENT SET NAME = ?,CLASS_NUM = ?,IS_ATTEND = ?";
+		PreparedStatement st=con.prepareStatement(BaseSql);
+		Student s=new Student();
+		
+		st.setString(1,s.getName());
+		st.setString(2, s.getClassNum());
+		st.setBoolean(3, s.getIsAttend());
+		
+		st.executeUpdate();
+		
+		st.close();
+		con.close();
+		
+		return list;
 	}
 }
