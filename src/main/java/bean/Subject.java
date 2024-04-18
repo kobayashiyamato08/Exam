@@ -4,7 +4,7 @@ public class Subject implements java.io.Serializable {
 
 	private String cd;
 	private String name;
-	private School school;
+	private String school;
 
 	public String getCd() {
 		return cd;
@@ -22,7 +22,7 @@ public class Subject implements java.io.Serializable {
 	public void setName(String name) {
 		this.name=name;
 	}
-	public void setSchool(School school) {
+	public void setSchool(String school) {
 		this.school=school;
 	}
 }
