@@ -1,16 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%@ page pageEncoding="UTF-8" %>
+<style>
+ 
+</style>
 <html>
-<head>
-<meta charset="UTF-8">
-
-<h1>メインページ</h1>
-
-</head>
-<body>
-
-
-
-</body>
+ <head>
+ <meta charset="UTR-8">
+  <h1>メインページ</h1>
+  <p>下の欄から調べたいものを選んでください。</p><br>
+ </head>
+ 
+ <body>
+  <%@ include file="menu.jsp" %>
+ </body>
 </html>

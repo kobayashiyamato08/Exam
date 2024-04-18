@@ -10,10 +10,7 @@
 </head>
 <body>
 
-<a href="kamoku_touroku.jsp">科目登録</a>
-<a href="kamoku_henkou.jsp">科目変更</a>
-<a href="kamoku_sakujo.jsp">科目削除</a>
-<a href="kamokubetsu_ichiran.jsp">科目別成績一覧</a>
+<%@ include file="kamoku_menu.jsp" %>
 
 </body>
 </html>

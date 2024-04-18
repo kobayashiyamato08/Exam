@@ -4,11 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<h1>成績一覧</h1>
+<p>正常に登録されました。</p>
 </head>
 <body>
-
-<%@ include file="seiseki_menu.jsp" %>
-
+ <a href="main.jsp">戻る</a>
 </body>
 </html>
