@@ -22,21 +22,37 @@ p {
 body{
     background-size: cover;
 }
+
+input{
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button{
+    width: 30;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 </style>
 <center>
 	<form action="./main.jsp">
-		<div class="login_form_top">
+		<div>
 			<h1>ログイン画面</h1>
 			<p>
 				ユーザID、パスワードをご入力の上、<br> 「ログイン」ボタンをクリックしてください。
 			</p>
 		</div>
 		<body background="${pageContext.request.contextPath}/picture/gakusei.jpg">
-			<div class="login_form_btm">
-				<input type="id" name="user_id" placeholder="ユーザーIDを入力してください"
-					style="width: 250px; margin: 0 auto;" required /> <br> 
-				<input type="password" name="password" placeholder="パスワードを入力してください"
-					style="width: 250px; margin: 0 auto;" required />
+			<div>
+				<input type="id" placeholder="ユーザーIDを入力してください"  required /> <br> 
+				<input type="password" name="password" placeholder="パスワードを入力してください" required />
 			</div>
 			<br>
 			<button type="submit">ログイン</button>
