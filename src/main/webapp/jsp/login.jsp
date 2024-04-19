@@ -19,26 +19,26 @@ p {
 	color: #cccccc;
 }
 
-body{
-    background-size: cover;
+body {
+	background-size: cover;
 }
 
-input{
-    width: 93%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+input {
+	width: 93%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
 }
 
-button{
-    width: 30;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+button {
+	width: 30;
+	padding: 10px;
+	background-color: #4CAF50;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
 </style>
 <center>
@@ -49,10 +49,12 @@ button{
 				ユーザID、パスワードをご入力の上、<br> 「ログイン」ボタンをクリックしてください。
 			</p>
 		</div>
-		<body background="${pageContext.request.contextPath}/picture/gakusei.jpg">
+		<body
+			background="${pageContext.request.contextPath}/picture/gakusei.jpg">
 			<div>
-				<input type="id" placeholder="ユーザーIDを入力してください"  required /> <br> 
-				<input type="password" name="password" placeholder="パスワードを入力してください" required />
+				<input type="id" placeholder="ユーザーIDを入力してください" required /> <br>
+				<input type="password" name="password" placeholder="パスワードを入力してください"
+					required />
 			</div>
 			<br>
 			<button type="submit">ログイン</button>
