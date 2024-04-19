@@ -7,7 +7,6 @@
 form {
 	width: 50%;
 	margin-top: 10%;
-	opacity: 10;
 }
 
 h1 {
@@ -17,7 +16,7 @@ h1 {
 
 p {
 	font-size: 20px;
-	color: white;
+	color: #cccccc;
 }
 
 body{

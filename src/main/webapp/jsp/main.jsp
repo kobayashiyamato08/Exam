@@ -6,14 +6,12 @@
 <head>
 <meta charset="UTR-8">
 <style>
-center{
-    
+h1 {
+	font-size: 50px;
 }
 </style>
 <center>
 	<h1>メインページ</h1>
-	<p>下の欄から調べたいものを選んでください。</p>
-	<br>
 </head>
 
 <body>
