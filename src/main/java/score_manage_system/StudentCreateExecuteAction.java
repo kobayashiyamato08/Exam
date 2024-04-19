@@ -18,7 +18,7 @@ public class StudentCreateExecuteAction extends Action {
 		String name=request.getParameter("name");
 		String class_num=request.getParameter("class_num");
 		
-//		TODO;入力年度、学生番号の未入力時エラーを実装する必要がある
+//		TODO;入力年度、学生番号の未入力時エラーの実装
 		
 //		情報が入力されていない場合はもとの画面に戻す
 		if (name.isEmpty()||class_num.isEmpty()) {

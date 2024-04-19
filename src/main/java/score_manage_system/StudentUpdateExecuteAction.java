@@ -15,6 +15,7 @@ public class StudentUpdateExecuteAction extends Action {
 //		編集する学生の情報の入力
 		String name=request.getParameter("name");
 		String class_num=request.getParameter("class_num");
+//		在学中判定はこれでいいのかよくわからない
 		Boolean is_attend=request.authenticate(response);
 		
 //		未入力の場合は前の画面に移る
