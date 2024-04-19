@@ -42,7 +42,7 @@ button{
 }
 </style>
 <center>
-	<form action="../score_manage_system/LoginExecute.action">
+	<form action="./main.jsp">
 		<div>
 			<h1>ログイン画面</h1>
 			<p>
