@@ -20,13 +20,13 @@ public class SubjectDAO extends DAO {
 		st=con.prepareStatement(
 				"select * from subject where cd=? and school=?");
 		st.setString(1, cd);
-		st.setString(2, school.getName());
+		st.setSchool(2, school);
 		ResultSet rs=st.executeQuery();
 		
 		if (rs.next()) {
 			subject = new Subject();
 			subject.setCd(rs.getString("cd"));
-			subject.setSchool(rs.getString("school"));
+			subject.setSchool(rs.getSchool("school"));
 			
 		}
 		return subject;
