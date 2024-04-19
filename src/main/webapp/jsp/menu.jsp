@@ -8,13 +8,12 @@
 </head>
 
 <body>
-	<a href="gakusei_ichiran.jsp">学生一覧</a>
+	<a href="gakusei_ichiran.jsp">学生一覧
 	<br>
-	<a href="kamoku_ichiran.jsp">科目一覧</a>
+	<a href="kaoku_ichiran.jsp">科目一覧
 	<br>
-	<a href="seiseki_ichiran.jsp">成績一覧</a>
+	<a href="seiseki_ichiran.jsp">成績一覧
 	<br>
-	<br>
-	<a href="logout.jsp">ログアウト</a>
+	<a href="logout.jsp">ログアウト
 </body>
 </html>
