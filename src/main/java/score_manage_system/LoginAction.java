@@ -9,6 +9,6 @@ public class LoginAction extends Action {
 		HttpServletRequest request,HttpServletResponse response
 		) throws Exception {
 			request.getSession();
-			return "../jsp/login.jsp";
+			return "../score_manage_system/login.jsp";
 	}
 }
