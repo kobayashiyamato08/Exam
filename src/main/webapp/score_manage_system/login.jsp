@@ -42,7 +42,7 @@ button{
 }
 </style>
 <center>
-	<form action="./main.jsp">
+	<form action="LoginExecute.action" method="post">
 		<div>
 			<h1>ログイン画面</h1>
 			<p>
@@ -51,7 +51,7 @@ button{
 		</div>
 		<body background="${pageContext.request.contextPath}/picture/gakusei.jpg">
 			<div>
-				<input type="id" placeholder="ユーザーIDを入力してください"  required /> <br> 
+				<input type="id" name="id" placeholder="ユーザーIDを入力してください"  required /> <br> 
 				<input type="password" name="password" placeholder="パスワードを入力してください" required />
 			</div>
 			<br>
