@@ -4,22 +4,28 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<h1>学生登録</h1>
+<style>
+h1{
+    font-size: 50px;
+}
+</style>
+<center>
+ <h1>学生登録</h1>
 <%@ include file="./gakusei_menu.jsp"%>
 </head>
 <body>
-	<form action="touroku.jsp" method="get" class="form_gakusei">
+	<form action="touroku.jsp" method="get">
 		<div class="form_gakusei">
 			<label for="no">学生番号:</label> <input type="text" name="no"
 				placeholder="学生番号を入力してください" required />
 		</div>
 
-		<div class="form_gakusei">
+		<div>
 			<label for="name">学生名:</label> <input type="text" name="name"
 				placeholder="名前を入力してください" required />
 		</div>
 
-		<div class="form_gakusei">
+		<div>
 			<label for="ent_year">入学年度:</label> <select name="ent_year" required />
 			<option value="" selected>選択してください。</option>
 			<option value="2014">2014</option>
@@ -46,7 +52,7 @@
 			</select>
 		</div>
 
-		<div class="form_gakusei">
+		<div>
 			<label for="class_num">クラス番号:</label> <select name="class" required />
 			<option value="" selected>選択してください。</option>
 			<option value="131">131</option>
@@ -55,7 +61,7 @@
 			</select>
 		</div>
 
-		<div class="_form_gakusei">
+		<div>
 			<label for="is_attend">在学中フラグ:</label> <select name="is_attend"
 				required />
 			<option value="" selected>選択してください。</option>
@@ -64,7 +70,7 @@
 			</select>
 		</div>
 
-		<div class="form_gakusei">
+		<div>
 			<label for="school_cd">学校コード:</label> <select name="school_num"
 				required />
 			<option value="" selected>選択してください。</option>
@@ -77,4 +83,5 @@
 			value="リセット">
 	</form>
 </body>
+</center>
 </html>

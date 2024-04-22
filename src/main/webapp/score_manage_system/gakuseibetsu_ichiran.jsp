@@ -3,11 +3,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+h1{
+    font-size: 50px;
+}
+</style>
 <meta charset="UTF-8">
-<h1>学生別成績一覧</h1>
-<%@ include file="./gakusei_menu.jsp"%>
+<center>
+	<h1>学生別成績一覧</h1>
+	<%@ include file="./gakusei_menu.jsp"%>
 </head>
 <body>
 
 </body>
+</center>
 </html>

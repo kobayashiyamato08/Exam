@@ -4,10 +4,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<h1>学生一覧</h1>
-<%@ include file="./gakusei_menu.jsp"%>
+<style>
+h1{
+    font-size: 50px;
+}
+</style>
+<center>
+	<h1>学生一覧</h1>
+	<%@ include file="./gakusei_menu.jsp"%>
 </head>
 <body>
 
 </body>
+</center>
 </html>
