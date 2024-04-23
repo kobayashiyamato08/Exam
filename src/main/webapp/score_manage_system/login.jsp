@@ -42,7 +42,7 @@ button{
 }
 </style>
 <center>
-	<form action="./main.jsp" method="post">
+	<form action="LoginExecute.action" method="post">
 		<div>
 			<h1>ログイン画面</h1>
 			<p>
