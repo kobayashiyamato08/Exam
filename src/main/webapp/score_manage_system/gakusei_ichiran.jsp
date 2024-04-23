@@ -5,16 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <style>
-h1{
-    font-size: 50px;
+h1 {
+	font-size: 40px;
+	text-align: center;
 }
 </style>
-<center>
-	<h1>学生一覧</h1>
-	<%@ include file="./gakusei_menu.jsp"%>
+<h1>学生一覧</h1>
+<%@ include file="./gakusei_menu.jsp"%>
 </head>
 <body>
 
 </body>
-</center>
 </html>

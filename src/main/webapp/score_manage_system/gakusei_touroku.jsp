@@ -17,15 +17,15 @@ h1 {
 }
 
 th {
-	text-align: left; /* テキスト左寄せ */
-	width: 300px; /* 横幅30%指定（グレーの背景色部分） */
-	background-color: #eee; /* グレーの背景色 */
+	text-align: left;
+	width: 300px;
+	background-color: #eee; 
 	padding: 20px;
 	border: 1px #ccc solid;
 }
 
 td {
-	width: 850px; /* 横幅70%指定（白背景色部分） */
+	width: 860px;
 	padding: 15px;
 	border: 1px #ccc solid;
 }
@@ -33,7 +33,17 @@ td {
 ul {
 	text-align: center;
 }
- 
+
+button {
+	width: 20%;
+	padding: 10px;
+	background-color: #2e1200;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	 border-radius: 100vh;
+}
 </style>
 <h1>学生登録</h1>
 <%@ include file="./gakusei_menu.jsp"%>
@@ -43,22 +53,22 @@ ul {
 		<table>
 			<tr>
 				<th><label for="no">学生番号</label></th>
-				<td><input type="text" name="no" required /></td>
+				<td><input type="text" name="no" style="width: 30%" placeholder="学生番号を入力してください" required /></td>
 			</tr>
 		</table>
 
 		<table>
 			<tr>
 				<th><label for="name">学生名</label></th>
-				<td><input type="text" name="name" required /></td>
+				<td><input type="text" name="name" style="width: 30%" placeholder="学生名を入力してください" required /></td>
 			</tr>
 		</table>
 
 		<table>
 			<tr>
 				<th><label for="ent_year">入学年度</label></th>
-				<td><select name="ent_year" required />
-					<option value="" selected></option>
+				<td><select name="ent_year" style="width: 25%" required />
+					<option value="" selected>選択してください。</option>
 					<option value="2014">2014</option>
 					<option value="2015">2015</option>
 					<option value="2016">2016</option>
@@ -87,10 +97,13 @@ ul {
 			<tr>
 				<th><label for="class_num">クラス番号</label></th>
 				<td>
-					<p>下から１つ選んでください</p> <input type="radio" name="is_attend" required />
-					<label>131</label> <br> <input type="radio" name="is_attend"
-					required /> <label>201</label> <br> <input type="radio"
-					name="is_attend" required /> <label>101</label> <br>
+					<p>下から１つ選んでください</p> 
+					<input type="radio" name="is_attend" required />
+         			  <label>131</label> <br> 
+         			<input type="radio" name="is_attend" required /> 
+         			  <label>201</label> <br> 
+         			<input type="radio" name="is_attend" required /> 
+         			  <label>101</label> <br>
 				</td>
 			</tr>
 		</table>
@@ -117,11 +130,11 @@ ul {
 			</tr>
 		</table>
 		<ul>
-			<input type="submit" value="送信">
+			<button type="submit">送信</button>
 		</ul>
-		
+
 		<ul>
-		    <input type="reset" value="リセット">
+			<button type="reset">リセット</button>
 		</ul>
 	</form>
 </body>

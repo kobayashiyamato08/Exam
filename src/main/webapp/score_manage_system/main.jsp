@@ -7,15 +7,19 @@
 <meta charset="UTR-8">
 <style>
 h1 {
-	font-size: 50px;
+	font-size: 40px;
+	text-align: center;
+}
+
+body{
+    text-align: center;
 }
 </style>
-<center>
-	<h1>メインページ</h1>
+<h1>メインページ</h1>
 </head>
 
 <body>
 	<%@ include file="menu.jsp"%>
+	<p>上記のメニューから選んでください</p>
 </body>
-</center>
 </html>
