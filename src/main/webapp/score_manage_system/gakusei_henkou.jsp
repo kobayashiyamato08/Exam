@@ -42,11 +42,11 @@ button {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	 border-radius: 100vh;
+	border-radius: 100vh;
 }
 </style>
 <h1>学生変更</h1>
-<%@ include file="./gakusei_menu.jsp"%>
+<%@ include file="./gakusei_menu.jsp"%> <br>
 </head>
 <body>
 	<form action="touroku.jsp" method="get">

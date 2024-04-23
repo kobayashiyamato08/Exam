@@ -19,7 +19,7 @@ h1 {
 th {
 	text-align: left;
 	width: 300px;
-	background-color: #eee; 
+	background-color: #eee;
 	padding: 20px;
 	border: 1px #ccc solid;
 }
@@ -42,25 +42,28 @@ button {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	 border-radius: 100vh;
+	border-radius: 100vh;
 }
 </style>
 <h1>学生登録</h1>
 <%@ include file="./gakusei_menu.jsp"%>
+<br>
 </head>
 <body>
 	<form action="touroku.jsp" method="get">
 		<table>
 			<tr>
 				<th><label for="no">学生番号</label></th>
-				<td><input type="text" name="no" style="width: 30%" placeholder="学生番号を入力してください" required /></td>
+				<td><input type="text" name="no" style="width: 30%"
+					placeholder="学生番号を入力してください" required /></td>
 			</tr>
 		</table>
 
 		<table>
 			<tr>
 				<th><label for="name">学生名</label></th>
-				<td><input type="text" name="name" style="width: 30%" placeholder="学生名を入力してください" required /></td>
+				<td><input type="text" name="name" style="width: 30%"
+					placeholder="学生名を入力してください" required /></td>
 			</tr>
 		</table>
 
@@ -97,13 +100,10 @@ button {
 			<tr>
 				<th><label for="class_num">クラス番号</label></th>
 				<td>
-					<p>下から１つ選んでください</p> 
-					<input type="radio" name="is_attend" required />
-         			  <label>131</label> <br> 
-         			<input type="radio" name="is_attend" required /> 
-         			  <label>201</label> <br> 
-         			<input type="radio" name="is_attend" required /> 
-         			  <label>101</label> <br>
+					<p>下から１つ選んでください</p> <input type="radio" name="is_attend" required />
+					<label>131</label> <br> <input type="radio" name="is_attend"
+					required /> <label>201</label> <br> <input type="radio"
+					name="is_attend" required /> <label>101</label> <br>
 				</td>
 			</tr>
 		</table>
@@ -112,9 +112,11 @@ button {
 			<tr>
 				<th><label for="is_attend">在学中フラグ</label></th>
 				<td>
-					<p>下から１つ選んでください</p> <input type="radio" name="class_num" required />
-					<label>している</label> <br> <input type="radio" name="class_num"
-					required /> <label>していない</label>
+					<p>下から１つ選んでください</p> 
+					<input type="radio" name="class_num" required />
+					  <label>している</label> <br> 
+					<input type="radio" name="class_num" required /> 
+					  <label>していない</label>
 				</td>
 			</tr>
 		</table>
@@ -123,12 +125,15 @@ button {
 			<tr>
 				<th><label for="school_cd">学校コード</label></th>
 				<td>
-					<p>下から１つ選んでください</p> <input type="radio" name="school_cd" required />
-					<label>oom</label> <br> <input type="radio" name="school_cd"
-					required /> <label>tky</label>
+					<p>下から１つ選んでください</p> 
+					<input type="radio" name="school_cd" required />
+					  <label>oom</label> <br> 
+					<input type="radio" name="school_cd" required /> 
+					  <label>tky</label>
 				</td>
 			</tr>
 		</table>
+
 		<ul>
 			<button type="submit">送信</button>
 		</ul>
