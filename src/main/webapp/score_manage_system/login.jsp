@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <%@ page pageEncoding="UTF-8"%>
 <html>
+<%@ include file="../header.html"%>
 <head>
 <meta charset="UTF-8">
 <style>
 form {
 	width: 30%;
 	height: 260px;
-	margin-top: 12%;
+	margin-top: 2%;
 	border: 3px #808080 solid;
-    border-radius: 1vh;
+	border-radius: 1vh;
 }
 
 h1 {
 	font-size: 25px;
-	background-color: ;
 	height: auto;
 }
 
@@ -54,5 +54,5 @@ button {
 			<button type="submit">ログイン</button>
 		</body>
 	</form>
-</center>
+	<%@ include file="../footer.html"%>
 </html>
