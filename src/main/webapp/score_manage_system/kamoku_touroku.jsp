@@ -4,8 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<h1>科目登録</h1>
-<%@ include file="./kamoku_menu.jsp"%>
+<style>
+h1{
+    font-size: 50px;
+}
+</style>
+<center>
+	<h1>科目登録</h1>
+	<%@ include file="./kamoku_menu.jsp"%>
 </head>
 <body>
 
@@ -85,4 +91,5 @@
 			value="リセット">
 	</form>
 </body>
+</center>
 </html>
