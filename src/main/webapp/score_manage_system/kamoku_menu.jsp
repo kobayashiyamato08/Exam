@@ -21,7 +21,6 @@ nav ul{
 nav ul li{
     position: relative;
 	width: 20%;
-
 }
 
 nav ul li a{

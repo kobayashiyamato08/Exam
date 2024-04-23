@@ -5,8 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <style>
-h1{
-    font-size: 50px;
+h1 {
+	font-size: 40px;
+	font-weght: bold;
+	margin-bottom: 40px;
+	text-align: center;
 }
 </style>
 <center>

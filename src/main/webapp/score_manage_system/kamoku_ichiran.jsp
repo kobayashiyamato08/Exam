@@ -5,17 +5,14 @@
 <head>
 <style>
 h1 {
-	font-size: 50px;
+	font-size: 40px;
+	text-align: center;
 }
 </style>
 <meta charset="UTF-8">
-<center>
-	<h1>科目一覧</h1>
+<h1>科目一覧</h1>
 </head>
 <body>
-
 	<%@ include file="kamoku_menu.jsp"%>
-
 </body>
-</center>
 </html>
