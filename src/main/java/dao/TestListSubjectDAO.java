@@ -1,6 +1,6 @@
 package dao;
 	
-	import java.sql.Connection;
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,7 +11,7 @@ import bean.School;
 import bean.Student;
 import bean.Subject;
 
-	public class TestListSubjectDAO {
+	public class TestListSubjectDAO extends DAO{
 		private static final String URL = "jdbc:h2:tcp://localhost/~/score_manage_system";
 		private Connection connection;
 		private String baseSql;
@@ -20,7 +20,7 @@ import bean.Subject;
 			this.baseSql = baseSql;
 		}
 		
-		protected Connection getConnection() throws SQLException {
+		public Connection getConnection() throws SQLException {
 	        if (connection == null || connection.isClosed()) {
 	            try {
 	                Class.forName("com.H2.jdbc.Driver");

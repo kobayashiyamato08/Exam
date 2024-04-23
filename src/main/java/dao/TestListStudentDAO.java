@@ -9,7 +9,7 @@ import java.util.List;
 
 import bean.Student;
 
-public class TestListStudentDAO {
+public class TestListStudentDAO extends DAO{
 	private static final String URL = "jdbc:h2:tcp://localhost/~/score_manage_system";
 	private Connection connection;
 	private String baseSql;
@@ -18,7 +18,7 @@ public class TestListStudentDAO {
 		this.baseSql = baseSql;
 	}
 	
-	protected Connection getConnection() throws SQLException {
+	public Connection getConnection() throws SQLException {
         if (connection == null || connection.isClosed()) {
             try {
                 Class.forName("com.H2.jdbc.Driver");
