@@ -35,6 +35,8 @@ gakusei{
     height: 100px;
     width: 180px;
     padding-top: 10%;
+    border-radius: 1vh;
+    vertical-align:  middle;
 }
 
 seiseki{
@@ -44,6 +46,8 @@ seiseki{
     width: 180px;
     padding-top: 2.4%;
     padding-bottom: 8%;
+    border-radius: 1vh;
+    vertical-align:  middle;
 }
 
 kamoku{
@@ -52,6 +56,8 @@ kamoku{
     height: 100px;
     width: 180px;
     padding-top: 10%;
+    border-radius: 1vh;
+    vertical-align:  middle;
 }
 
 </style>
