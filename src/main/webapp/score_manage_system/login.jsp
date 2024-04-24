@@ -8,8 +8,8 @@
 form {
 	width: 30%;
 	height: 260px;
-	margin-top: 2%;
-	border: 3px #808080 solid;
+	margin-top: 12%;
+	border: 1px #808080 solid;
 	border-radius: 1vh;
 }
 

@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <%@ page pageEncoding="UTF-8"%>
-<style>
-</style>
 <html>
+<%@ include file="../header.html"%>
 <head>
 <meta charset="UTR-8">
 <style>
-h1 {
-	font-size: 40px;
-	text-align: center;
+menu{
+    margin-left: 175px;
+    margin-top: 50px;
 }
 
-body{
-    text-align: center;
+h1{
+    margin-left: 500px;
+    background-color: silver;
+    width: 515px;
 }
 </style>
-<h1>メインページ</h1>
+<h1>メニュー</h1>
 </head>
 
 <body>
-	<%@ include file="menu.jsp"%>
-	<p>上記のメニューから選んでください</p>
+	<menu><%@ include file="menu.jsp"%></menu>
 </body>
+<%@ include file="../footer.html" %>
 </html>
