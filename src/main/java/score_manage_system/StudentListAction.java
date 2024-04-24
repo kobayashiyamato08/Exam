@@ -16,7 +16,7 @@ public class StudentListAction extends Action{
 		HttpSession session=request.getSession();
 		
 		StudentDAO dao= new StudentDAO();
-		List<Student> list=dao.StudentList("");
+		List<Student> list=dao.StudentList(0, null, null, null, false);
 		
 		session.setAttribute("list", list);
 		
