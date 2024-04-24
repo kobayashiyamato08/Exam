@@ -3,48 +3,11 @@
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-<<<<<<< HEAD
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 import bean.School;
-import bean.Student;
-
-public class StudentDAO extends DAO {
-	public Student get(String no)
-		throws Exception {
-		Student student=null;
-		
-		Connection con=getConnection();
-		
-		PreparedStatement st;
-		st=con.prepareStatement(
-				"select * from student where no=?");
-			st.setString(1, no);
-			ResultSet rs=st.executeQuery();
-			if (rs.next()) {
-				
-				student = new Student();
-				student.setNo(rs.getString("no"));
-			}
-			return student;
-	}
-			
-public List<Student> postFilter(ResultSet rSet, School school) {
-	List<Student> filteredStudents = new ArrayList<>();
-    try {
-        while (rSet.next()) {
-        }
-    } catch (SQLException e) {
-        e.printStackTrace();
-    }
-    return filteredStudents;
-=======
-import java.util.ArrayList;
-import java.util.List;
->>>>>>> branch 'master' of https://github.com/kobayashiyamato08/Exam.git
-
 import bean.Student;
 import bean.Teacher;
 
@@ -52,6 +15,35 @@ public class StudentDAO extends DAO {
 //	basesqlの呼び出し
 	public String BaseSql;
 	
+	public Student get(String no)
+			throws Exception {
+			Student student=null;
+			
+			Connection con=getConnection();
+			
+			PreparedStatement st;
+			st=con.prepareStatement(
+					"select * from student where no=?");
+				st.setString(1, no);
+				ResultSet rs=st.executeQuery();
+				if (rs.next()) {
+					
+					student = new Student();
+					student.setNo(rs.getString("no"));
+				}
+				return student;
+		}
+	
+	public List<Student> postFilter(ResultSet rSet, School school) {
+		List<Student> filteredStudents = new ArrayList<>();
+	    try {
+	        while (rSet.next()) {
+	        }
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	    return filteredStudents;
+	}
 //	学生テーブルの情報を表示する操作StudentListメソッドを定義
 	public List<Student> StudentList(int ent_year,String no,String name,String class_num,boolean is_attend)
 	throws Exception {
@@ -133,8 +125,6 @@ public class StudentDAO extends DAO {
 		
 		return list;
 	}
-
-}
     public List<Student> filter(School school, int entYear, String classNum, boolean isAttend) {
     	 List<Student> filteredStudents = new ArrayList<>();
     	    return filteredStudents;
