@@ -42,7 +42,7 @@ button {
 }
 </style>
 <center>
-	<form action="./main.jsp" method="post">
+	<form action="../score_manage_system/LoginExecute.action" method="post">
 		<h1>ログイン画面</h1>
 		<body>
 			<div>
@@ -54,5 +54,6 @@ button {
 			<button type="submit">ログイン</button>
 		</body>
 	</form>
+</center>
 	<%@ include file="../footer.html"%>
 </html>
