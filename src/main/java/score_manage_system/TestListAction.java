@@ -12,7 +12,7 @@ import jakarta.servlet.http.HttpSession;
 import tool.Action;
 
 public class TestListAction extends Action{
-	public void execute(
+	public String execute(
 			HttpServletRequest request,HttpServletResponse response
 		) throws Exception {
 			HttpSession session=request.getSession();
@@ -25,7 +25,7 @@ public class TestListAction extends Action{
 			
 			session.setAttribute("list", list);
 			
-			return;
+			return null;
 			
 	}
 
