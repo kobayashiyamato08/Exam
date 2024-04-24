@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <%@ page pageEncoding="UTF-8"%>
 <style>
-li{
-    list-style: none;
-    margin-left: 20px;
+li {
+	list-style: none;
+	margin-left: 20px;
 }
-
 </style>
 <html>
 <head>
@@ -13,15 +12,19 @@ li{
 </head>
 
 <body>
-	<aside>
-		<ul>
-			<a href="main.jsp">メニュー</a><p></p>
-			<a href="gakusei_ichiran.jsp">学生管理</a><p></p>
-			<label>成績管理</label><p></p>
-			<li><a href="seiseki_touroku.jsp">成績登録</a></li><p></p>
-			<li><a href="seiseki_sansyou.jsp">成績参照</a></li><p></p>
-			<a href="kamoku_ichiran.jsp">科目管理</a><p></p>
-		</ul>
-	</aside>
+	<ul>
+		<a href="main.jsp">メニュー</a>
+		<p></p>
+		<a href="gakusei_ichiran.jsp">学生管理</a>
+		<p></p>
+		<label>成績管理</label>
+		<p></p>
+		<li><a href="seiseki_touroku.jsp">成績登録</a></li>
+		<p></p>
+		<li><a href="seiseki_sansyou.jsp">成績参照</a></li>
+		<p></p>
+		<a href="kamoku_ichiran.jsp">科目管理</a>
+		<p></p>
+	</ul>
 </body>
 </html>
