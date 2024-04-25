@@ -29,7 +29,7 @@ public class TestListAction extends Action{
 			
 			session.setAttribute("list", list);
 			
-			return;
+			return null;
 			
 	}
 

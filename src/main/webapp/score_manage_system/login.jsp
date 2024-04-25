@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <%@ page pageEncoding="UTF-8"%>
 <html>
+<%@ include file="../header.html"%>
 <head>
 <meta charset="UTF-8">
 <style>
@@ -8,13 +9,12 @@ form {
 	width: 30%;
 	height: 260px;
 	margin-top: 12%;
-	border: 3px #808080 solid;
-    border-radius: 1vh;
+	border: 1px #808080 solid;
+	border-radius: 1vh;
 }
 
 h1 {
 	font-size: 25px;
-	background-color: ;
 	height: auto;
 }
 
@@ -43,6 +43,7 @@ button {
 </style>
 <center>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<form action="LoginExecute.action" method="post">
 		<div>
 			<h1>ログイン画面</h1>
@@ -53,6 +54,9 @@ button {
 		<body background="${pageContext.request.contextPath}/picture/gakusei.jpg">
 =======
 	<form action="./main.jsp" method="post">
+=======
+	<form action="../score_manage_system/LoginExecute.action" method="post">
+>>>>>>> branch 'master' of https://github.com/kobayashiyamato08/Exam.git
 		<h1>ログイン画面</h1>
 		<body>
 >>>>>>> branch 'master' of https://github.com/kobayashiyamato08/Exam.git
@@ -66,4 +70,5 @@ button {
 		</body>
 	</form>
 </center>
+	<%@ include file="../footer.html"%>
 </html>
