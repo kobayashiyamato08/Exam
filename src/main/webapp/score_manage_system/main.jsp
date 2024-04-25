@@ -6,7 +6,6 @@
 <meta charset="UTR-8">
 <style>
 body {
-	width: 960px;
 	display: flex;
 	box-sizing: border-box;
 }
@@ -14,13 +13,13 @@ body {
 menu {
 	min-width: 600px;
 	margin-top: 100px;
-	margin-left: 175px;
+	margin-left: 50px;
 	margin-right: -200px;
 	box-sizing: border-box;
 }
 
 h3 {
-	background-color:;
+	background-color: #eeeeee;
 	width: 600px;
 	margin-top: 100px;
 	height: 40px;

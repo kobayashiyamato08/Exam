@@ -47,7 +47,8 @@ button {
 		<body>
 			<div>
 				<input type="id" name="id" placeholder="ユーザーIDを入力してください" required />
-				<br> <input type="password" name="password"
+				<br> 
+				<input type="password" name="password"
 					placeholder="パスワードを入力してください" required />
 			</div>
 			<br>
