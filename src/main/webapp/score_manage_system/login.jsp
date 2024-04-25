@@ -42,8 +42,6 @@ button {
 }
 </style>
 <center>
-<<<<<<< HEAD
-<<<<<<< HEAD
 	<form action="LoginExecute.action" method="post">
 		<div>
 			<h1>ログイン画面</h1>
@@ -52,14 +50,10 @@ button {
 			</p>
 		</div>
 		<body background="${pageContext.request.contextPath}/picture/gakusei.jpg">
-=======
 	<form action="./main.jsp" method="post">
-=======
 	<form action="../score_manage_system/LoginExecute.action" method="post">
->>>>>>> branch 'master' of https://github.com/kobayashiyamato08/Exam.git
 		<h1>ログイン画面</h1>
 		<body>
->>>>>>> branch 'master' of https://github.com/kobayashiyamato08/Exam.git
 			<div>
 				<input type="id" name="id" placeholder="ユーザーIDを入力してください" required />
 				<br> <input type="password" name="password"
