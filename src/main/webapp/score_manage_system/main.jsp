@@ -31,33 +31,44 @@ h3 {
 
 gakusei{
     display: inline-block;
-    background-color: green;
+    background-color: lightgreen;
     height: 100px;
     width: 180px;
     padding-top: 10%;
     border-radius: 1vh;
     vertical-align:  middle;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
 }
 
 seiseki{
     display: inline-block;
-    background-color: red;
+    background-color: pink;
     height: 100px;
     width: 180px;
     padding-top: 2.4%;
     padding-bottom: 8%;
     border-radius: 1vh;
     vertical-align:  middle;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    
 }
 
 kamoku{
     display: inline-block;
-    background-color: blue;
+    background-color: lightblue;
     height: 100px;
     width: 180px;
     padding-top: 10%;
     border-radius: 1vh;
     vertical-align:  middle;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
 }
 
 </style>

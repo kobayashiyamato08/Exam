@@ -5,6 +5,10 @@ li {
 	list-style: none;
 	margin-left: 20px;
 }
+
+ul{
+    font-size: 20px;
+}
 </style>
 <html>
 <head>
