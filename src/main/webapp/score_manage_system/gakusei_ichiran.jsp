@@ -28,17 +28,14 @@ h1 {
 	border-left: 5px solid #31a9ee;
 	padding-left: 10px;
 }
-div{
-    
-}
+
 gakusei {
     display: inline-block;
 	border: 2px solid #eeeeee;
 	border-radius: 1vh;
 	padding: 40px;
 	padding-top: 10px;
-	width: 520px;
-	
+	width: 520px;	
 }
 
 nyugaku{
