@@ -70,10 +70,55 @@ public class SubjectDAO extends DAO {
 	
 	public List<Subject> SubjectCreate(Subject subject)
 	throws Exception {
+		
+		List<Subject> list=new ArrayList<>();
 		Connection con = getConnection();
 		PreparedStatement st=con.prepareStatement("INSERT INTO SBJECT (SCHOOL_CD,CD,NAME) VALUES(?,?,?)");
 		Subject s=new Subject();
-		return null;
+		
+		st.setString(1,s.getCd());
+		st.setString(2, s.getName());
+		
+		st.executeUpdate();
+		
+		st.close();
+		con.close();
+		
+		return list;
+	}
+	
+	public List<Subject> StudentUpdate(Subject subject)
+	throws Exception {
+		List<Subject> list=new ArrayList<>();
+		Connection con=getConnection();
+		PreparedStatement st=con.prepareStatement("UPDATE SUBJECT SET CD=?,NAME=?");
+		Subject s=new Subject();
+		
+		st.setString(1,s.getCd());
+		st.setString(2, s.getName());
+		
+		st.executeUpdate();
+		
+		st.close();
+		con.close();
+		
+		return list;
+	}
+	
+	public List<Subject> StudentDelete(Subject subject)
+	throws Exception {
+		List<Subject> list=new ArrayList<>();
+		Connection con=getConnection();
+		PreparedStatement st=con.prepareStatement("DELETE FROM STUDENT WHERE NAME = ?");
+		Subject s = new Subject();
+		
+		st.setString(1, s.getName());
+		st.executeUpdate();
+		
+		st.close();
+		con.close();
+		
+		return list;
 	}
 	 
 }
