@@ -76,6 +76,7 @@ public class SubjectDAO extends DAO {
 		PreparedStatement st=con.prepareStatement("INSERT INTO SBJECT (SCHOOL_CD,CD,NAME) VALUES(?,?,?)");
 		Subject s=new Subject();
 		
+//		st.setSchool(1,get("cd", null));
 		st.setString(1,s.getCd());
 		st.setString(2, s.getName());
 		
