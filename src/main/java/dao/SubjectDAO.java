@@ -3,6 +3,8 @@
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 import bean.School;
 import bean.Subject;
@@ -41,4 +43,37 @@ public class SubjectDAO extends DAO {
 	    
 	    return subject;
 	}
+	
+	public List<Subject> SujectList(String cd,String name)
+	throws Exception {
+		List<Subject> list=new ArrayList<>();
+//		SQL文を実行
+		Connection con = getConnection();
+		PreparedStatement st=con.prepareStatement("SELECT CD,NAME FROM SUBJECT");
+		st.setString(1, cd);
+		st.setString(2, name);
+		ResultSet rs=st.executeQuery();
+		
+//		情報を取得し表示、次の行の生成をデータがなくなるまで行う
+		while(rs.next()) {
+			Subject s = new Subject();
+			s.setCd(rs.getString("cd"));
+			s.setName(rs.getString("name"));
+		}
+		
+//		データベースの接続を切る
+		st.close();
+		con.close();
+		
+		return list; //listを返却
+	}
+	
+	public List<Subject> SubjectCreate(Subject subject)
+	throws Exception {
+		Connection con = getConnection();
+		PreparedStatement st=con.prepareStatement("INSERT INTO SBJECT (SCHOOL_CD,CD,NAME) VALUES(?,?,?)");
+		Subject s=new Subject();
+		return null;
+	}
+	 
 }
