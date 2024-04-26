@@ -29,6 +29,10 @@ h1 {
 	padding-left: 10px;
 }
 
+sinki {
+    padding-left: 530px;
+}
+
 gakusei {
     display: inline-block;
 	border: 2px solid #eeeeee;
@@ -49,16 +53,23 @@ class{
 zaigaku{
     display: inline-block;
 }
+
+sibori {
+    padding-left: 12px;
+}
 </style>
 </head>
 <body>
 	<menu><%@ include file="./menu.jsp"%></menu>
 	<div>
 		<h1>学生管理</h1>
+		<sinki>
+		  <a href="gakusei_touroku.jsp">新規登録</a><br>
+		</sinki>
 		<gakusei> 
 		  <nyugaku>
 		    <label>入学年度</label><br>
-		      <select style="width: 180px; height: 30px;">
+		      <select style="width: 180px; height: 30px;" required />
 			    <option value="" selected>------</option>
 			    <option value="2014">2014</option>
 				<option value="2015">2015</option>
@@ -86,7 +97,7 @@ zaigaku{
 		   
 		   <class>
 		    <label>クラス</label><br>
-		      <select style="width: 180px; height: 30px;">
+		      <select style="width: 180px; height: 30px;" required />
 			    <option value="" selected>-------</option>
 			    <option value="131">131</option>
 			    <option value="101">101</option>
