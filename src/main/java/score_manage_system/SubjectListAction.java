@@ -1,5 +1,8 @@
 package score_manage_system;
 
+import java.util.List;
+
+import bean.Subject;
 import dao.SubjectDAO;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -14,7 +17,10 @@ public class SubjectListAction extends Action {
 		
 //		SubjectDAOを呼び出し、科目の表示を実行する
 		SubjectDAO dao=new SubjectDAO();
+		List<Subject> list=dao.SubjectList(null, null);
 		
-		return null;
+		session.setAttribute("list", list);
+		
+		return "subject_list.jsp";
 	}
 }

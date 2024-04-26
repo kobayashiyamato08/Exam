@@ -6,7 +6,6 @@
 <meta charset="UTR-8">
 <style>
 body {
-	width: 960px;
 	display: flex;
 	box-sizing: border-box;
 }
@@ -14,13 +13,13 @@ body {
 menu {
 	min-width: 600px;
 	margin-top: 100px;
-	margin-left: 175px;
+	margin-left: 50px;
 	margin-right: -200px;
 	box-sizing: border-box;
 }
 
 h3 {
-	background-color:;
+	background-color: #eeeeee;
 	width: 600px;
 	margin-top: 100px;
 	height: 40px;
@@ -31,33 +30,44 @@ h3 {
 
 gakusei{
     display: inline-block;
-    background-color: green;
+    background-color: lightgreen;
     height: 100px;
     width: 180px;
     padding-top: 10%;
     border-radius: 1vh;
     vertical-align:  middle;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
 }
 
 seiseki{
     display: inline-block;
-    background-color: red;
+    background-color: pink;
     height: 100px;
     width: 180px;
     padding-top: 2.4%;
     padding-bottom: 8%;
     border-radius: 1vh;
     vertical-align:  middle;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    
 }
 
 kamoku{
     display: inline-block;
-    background-color: blue;
+    background-color: lightblue;
     height: 100px;
     width: 180px;
     padding-top: 10%;
     border-radius: 1vh;
     vertical-align:  middle;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
 }
 
 </style>

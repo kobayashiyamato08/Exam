@@ -43,20 +43,14 @@ button {
 </style>
 <center>
 	<form action="LoginExecute.action" method="post">
-		<div>
-			<h1>ログイン画面</h1>
-			<p>
-				ユーザID、パスワードをご入力の上、<br> 「ログイン」ボタンをクリックしてください。
-			</p>
-		</div>
-		<body background="${pageContext.request.contextPath}/picture/gakusei.jpg">
-	<form action="./main.jsp" method="post">
+		<body>
 	<form action="../score_manage_system/LoginExecute.action" method="post">
 		<h1>ログイン画面</h1>
 		<body>
 			<div>
 				<input type="id" name="id" placeholder="ユーザーIDを入力してください" required />
-				<br> <input type="password" name="password"
+				<br> 
+				<input type="password" name="password"
 					placeholder="パスワードを入力してください" required />
 			</div>
 			<br>

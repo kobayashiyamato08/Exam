@@ -1,25 +1,29 @@
 package score_manage_system;
 
-import java.util.List;
-
-import bean.Student;
-import dao.StudentDAO;
+import dao.SubjectDAO;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import tool.Action;
 
-public class StudentListAction extends Action{
+public class SubjectCreateExecuteAction extends Action {
 	public String execute(
 		HttpServletRequest request,HttpServletResponse response
 	) throws Exception {
 		HttpSession session=request.getSession();
 		
-		StudentDAO dao= new StudentDAO();
-		List<Student> list=dao.StudentList(0, null, false);
+		String cd=request.getParameter("cd");
+		String name=request.getParameter("name");
 		
-		session.setAttribute("list", list);
+//		TODO:例外処理の記述
 		
-		return "student_list.jsp";
+		
+		SubjectDAO dao=new SubjectDAO();
+		session.getAttribute("subject");
+		dao.SubjectCreate(null);
+		
+		return "subject_create_done.jsp";
+		
 	}
+
 }
