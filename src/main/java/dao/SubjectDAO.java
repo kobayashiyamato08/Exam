@@ -44,7 +44,7 @@ public class SubjectDAO extends DAO {
 	    return subject;
 	}
 	
-	public List<Subject> SujectList(String cd,String name)
+	public List<Subject> SubjectList(String cd,String name)
 	throws Exception {
 		List<Subject> list=new ArrayList<>();
 //		SQL文を実行
