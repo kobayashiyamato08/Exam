@@ -42,6 +42,15 @@ button {
 }
 </style>
 <center>
+	<form action="LoginExecute.action" method="post">
+		<div>
+			<h1>ログイン画面</h1>
+			<p>
+				ユーザID、パスワードをご入力の上、<br> 「ログイン」ボタンをクリックしてください。
+			</p>
+		</div>
+		<body background="${pageContext.request.contextPath}/picture/gakusei.jpg">
+	<form action="./main.jsp" method="post">
 	<form action="../score_manage_system/LoginExecute.action" method="post">
 		<h1>ログイン画面</h1>
 		<body>

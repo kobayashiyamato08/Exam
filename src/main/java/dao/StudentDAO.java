@@ -45,28 +45,29 @@ public class StudentDAO extends DAO {
 	    return filteredStudents;
 	}
 //	学生テーブルの情報を表示する操作StudentListメソッドを定義
-	public List<Student> StudentList(int ent_year,String no,String name,String class_num,boolean is_attend)
+	public List<Student> StudentList(int ent_year,String class_num,boolean is_attend)
 	throws Exception {
 		List<Student> list=new ArrayList<>();
-//		SQL文を実行
+//		SQL文で全情報を表示する
 		Connection con = getConnection();
-		BaseSql="SELECT ENT_YEAR,NO,NAME,CLASS_NUM,IS_ATTEND FROM STUDENT";
+		BaseSql="SELECT * FROM STUDENT WHERE ENT_YEAR = ? AND CLASS_NUM = ? AND IS_ATTEND = ?";
 		PreparedStatement st=con.prepareStatement(BaseSql);
+//		学生情報を以下の要素をセレクトして表示するように値をセット
 		st.setInt(1, ent_year);
-		st.setString(2, no);
-		st.setString(3, name);
-		st.setString(4, class_num);
-		st.setBoolean(5, is_attend);
+		st.setString(2, class_num);
+		st.setBoolean(3, is_attend);
+
+//		上記のSQLを実行
 		ResultSet rs=st.executeQuery();
 		
-//		情報を取得し表示、次の行の生成をデータがなくなるまで行う
+//		一致する情報があれば情報を取得し表示、次の行の生成をデータがなくなるまで行う
 		while(rs.next()) {
 			Student s = new Student();
 			s.setEntYear(rs.getInt("ent_year"));
 			s.setNo(rs.getString("no"));
 			s.setName(rs.getString("name"));
 			s.setClassNum(rs.getString("class_num"));
-			s.setIsAttend(rs.getBoolean("is_attend"));	
+			s.setIsAttend(rs.getBoolean("is_attend"));
 		}
 		
 //		データベースの接続を切る
@@ -93,8 +94,6 @@ public class StudentDAO extends DAO {
 		st.setInt(3,s.getEntYear());
 		st.setString(4,s.getClassNum());
 		st.setBoolean(5,true);
-
-
 		
 		st.executeUpdate();
 		
