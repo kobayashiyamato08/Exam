@@ -6,7 +6,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import tool.Action;
 
-public class SubjectCreateExecuteAction extends Action {
+public class SubjectUpdateExecuteAction extends Action {
 	public String execute(
 		HttpServletRequest request,HttpServletResponse response
 	) throws Exception {
@@ -15,18 +15,13 @@ public class SubjectCreateExecuteAction extends Action {
 		String cd=request.getParameter("cd");
 		String name=request.getParameter("name");
 		
-//		TODO:例外処理の記述
 		if (cd.isEmpty()||name.isEmpty()) {
-			return "subject_create.jsp";
+			return "subject_update.jsp";
 		}
-		
 		
 		SubjectDAO dao=new SubjectDAO();
 		session.getAttribute("subject");
-		dao.SubjectCreate(cd,name, null);
-		
-		return "subject_create_done.jsp";
-		
+		dao.SubjectUpdate(cd, name);
+		return "subject_update_done.jsp";
 	}
-
 }

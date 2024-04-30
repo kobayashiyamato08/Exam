@@ -78,7 +78,7 @@ public class StudentDAO extends DAO {
 	}
 	
 //	学生テーブルに新たに情報を追加する操作
-	public List<Student> StudentCreate(String no,String name,int ent_year,String class_num) 
+	public List<Student> StudentCreate(String no,String name,int ent_year,String class_num,Teacher teacher) 
 		throws Exception {
 		
 		List<Student> list=new ArrayList<>();
@@ -94,6 +94,7 @@ public class StudentDAO extends DAO {
 		st.setInt(3,s.getEntYear());
 		st.setString(4,s.getClassNum());
 		st.setBoolean(5,true);
+//		st.setSchool(6,t.getSchool());
 		
 		st.executeUpdate();
 		

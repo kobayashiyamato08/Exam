@@ -8,6 +8,7 @@ import java.util.List;
 
 import bean.School;
 import bean.Subject;
+import bean.Teacher;
 
 public class SubjectDAO extends DAO {
 	public Subject get(String cd, School school) throws Exception {
@@ -68,17 +69,18 @@ public class SubjectDAO extends DAO {
 		return list; //listを返却
 	}
 	
-	public List<Subject> SubjectCreate(Subject subject)
+	public List<Subject> SubjectCreate(String cd,String name,Teacher teacher)
 	throws Exception {
 		
 		List<Subject> list=new ArrayList<>();
 		Connection con = getConnection();
 		PreparedStatement st=con.prepareStatement("INSERT INTO SBJECT (SCHOOL_CD,CD,NAME) VALUES(?,?,?)");
 		Subject s=new Subject();
+		Teacher t=new Teacher();
 		
-//		st.setSchool(1,get("cd", null));
-		st.setString(1,s.getCd());
-		st.setString(2, s.getName());
+//		st.setSchool(1,getSchool());
+		st.setString(2,s.getCd());
+		st.setString(3, s.getName());
 		
 		st.executeUpdate();
 		
@@ -88,7 +90,7 @@ public class SubjectDAO extends DAO {
 		return list;
 	}
 	
-	public List<Subject> StudentUpdate(Subject subject)
+	public List<Subject> SubjectUpdate(String cd, String name)
 	throws Exception {
 		List<Subject> list=new ArrayList<>();
 		Connection con=getConnection();
@@ -106,7 +108,7 @@ public class SubjectDAO extends DAO {
 		return list;
 	}
 	
-	public List<Subject> StudentDelete(Subject subject)
+	public List<Subject> SubjectDelete(Subject subject)
 	throws Exception {
 		List<Subject> list=new ArrayList<>();
 		Connection con=getConnection();
