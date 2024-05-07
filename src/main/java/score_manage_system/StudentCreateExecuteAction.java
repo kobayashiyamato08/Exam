@@ -20,6 +20,7 @@ public class StudentCreateExecuteAction extends Action {
 		
 //		TODO;入力年度、学生番号の未入力時エラーの実装
 		
+		
 //		情報が入力されていない場合はもとの画面に戻す
 		if (name.isEmpty()||class_num.isEmpty()) {
 			return "student_create.jsp";
@@ -28,7 +29,7 @@ public class StudentCreateExecuteAction extends Action {
 //		全ての情報が入力されていれば実行、完了の画面を表示する
 		StudentDAO dao=new StudentDAO();
 		session.getAttribute("student");
-		dao.StudentCreate(no, name, ent_year, class_num);
+		dao.StudentCreate(no, name, ent_year, class_num, null);
 		return "student_create_done.jsp";
 	}
 }
