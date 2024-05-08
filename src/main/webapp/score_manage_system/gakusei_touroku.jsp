@@ -58,6 +58,16 @@ input {
     height: 35px;
 }
 
+button {
+    width: 15%;
+	padding: 10px;
+	background-color: gray;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	border-radius: 1vh;
+}
 </style>
 </head>
 <body>
@@ -111,7 +121,7 @@ input {
 			<option value="201">201</option>
 		</select>
 	</class><br>
-	
+	<button type="submit">登録して終了</button><p></p>
 	<a href="gakusei_ichiran.jsp">戻る</a>
   </div>
 </body>

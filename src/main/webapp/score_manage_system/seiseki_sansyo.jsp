@@ -63,6 +63,17 @@ gakusei_johou {
 	width: 520px;
 }
 
+button {
+    width: 50px;
+	padding: 10px;
+	background-color: gray;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	border-radius: 1vh;
+}
+
 </style>
 </head>
 
@@ -111,7 +122,7 @@ gakusei_johou {
 		   
 		   <kamoku>
 		     <label>科目</label><br>
-		     <select style="width: 150px; height: 30px;" required />
+		     <select style="width: 140px; height: 30px;" required />
 		       <option value="" selected>-------</option>
 		       <option value="" ></option>
 		     </select> 

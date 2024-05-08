@@ -54,9 +54,17 @@ zaigaku{
     display: inline-block;
 }
 
-sibori {
-    padding-left: 12px;
+button {
+    width: 60px;
+	padding: 10px;
+	background-color: gray;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	border-radius: 1vh;
 }
+
 </style>
 </head>
 <body>
