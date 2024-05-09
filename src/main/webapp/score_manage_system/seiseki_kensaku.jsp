@@ -156,7 +156,7 @@ button {
 		     <button type="submit">検索</button>
 		   </kensaku>
 		 </seiseki_kanri>
-	</form>
-	<%@ include file="../footer.html"%>
+	</form><p>
 </body>
+<%@ include file="../footer.html"%>
 </html>
