@@ -29,7 +29,7 @@ h1 {
 	padding-left: 10px;
 }
 
-seiseki_kanri {
+kamoku_johou {
     display: inline-block;
 	border: 2px solid #eeeeee;
 	border-radius: 1vh;
@@ -54,6 +54,15 @@ kaisu {
     display: inline-block;
 }
 
+gakusei_johou {
+    display: inline-block;
+	border: 2px solid #eeeeee;
+	border-radius: 1vh;
+	padding: 40px;
+	padding-top: 10px;
+	width: 520px;
+}
+
 button {
     width: 50px;
 	padding: 10px;
@@ -71,8 +80,8 @@ button {
 <body>
 	<menu><%@ include file="menu.jsp"%></menu>
 	<div>
-	<h1>成績管理</h1>
-	  <seiseki_kanri> 
+	<h1>成績参照</h1>
+	  <kamoku_johou> 
 		  <nyugaku>
 		    <label>入学年度</label><br>
 		      <select style="width: 100px; height: 30px;" required />
@@ -131,7 +140,19 @@ button {
 		   <kensaku>
 		     <button type="submit">検索</button>
 		   </kensaku>
-		 </seiseki_kanri>
+		 </kamoku_johou>
+		 
+		 <gakusei_johou>
+		   <gakusei_bangou>
+		     <label>学生番号</label><br>
+		     <input type="text" name="gakusei_bangou" placeholder="学生番号を入力してください" style="width: 200px; height: 25px;" required />
+		   </gakusei_bangou>
+		   
+		   <kensaku>
+		     <button type="submit">検索</button>
+		   </kensaku>
+		 </gakusei_johou>
+		 <p>科目情報を選択または学生情報を入力して検索ボタンをクリックしてください。</p>
 	</div>
 	<%@ include file="../footer.html"%>
 </body>

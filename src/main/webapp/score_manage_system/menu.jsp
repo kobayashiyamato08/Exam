@@ -25,7 +25,7 @@ ul{
 		<p></p>
 		<li><a href="seiseki_touroku.jsp">成績登録</a></li>
 		<p></p>
-		<li><a href="seiseki_sansyou.jsp">成績参照</a></li>
+		<li><a href="seiseki_sansyo.jsp">成績参照</a></li>
 		<p></p>
 		<a href="kamoku_ichiran.jsp">科目管理</a>
 		<p></p>
