@@ -30,7 +30,7 @@ h1 {
 }
 
 label{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 nyugaku {
@@ -72,7 +72,7 @@ button {
 </head>
 <body>
   <menu><%@ include file="./menu.jsp" %></menu>
-  <div>
+  <form action="main.jsp">
     <h1>学生情報登録</h1>
     <nyugaku>
       <label>入学年度</label><br>
@@ -121,9 +121,9 @@ button {
 			<option value="201">201</option>
 		</select>
 	</class><br>
-	<button type="submit">登録して終了</button><p></p>
+	<button type="buttton">登録して終了</button><p></p>
 	<a href="gakusei_ichiran.jsp">戻る</a>
-  </div>
+  </form>
 </body>
 <%@ include file="../footer.html"%>
 </html>
