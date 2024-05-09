@@ -124,7 +124,8 @@ button {
 					<option value="it">IT概論</option>
 					<option value="java_basics">Java基礎</option>
 					<option value="kamoku_1">科目1</option>
-			     	<option value="kamoku_2">科目2</option>						<option value="kamoku_3">科目3</option>
+			     	<option value="kamoku_2">科目2</option>						
+			     	<option value="kamoku_3">科目3</option>
 			 		<option value="kamoku_4">科目4</option>
 					<option value="kamoku_5">科目5</option> </select></td>
 			</tr>
