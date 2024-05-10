@@ -74,6 +74,20 @@ button {
 	border-radius: 1vh;
 }
 
+th {
+    padding-right: 150px;
+}
+
+td {
+    padding-left: 65px;
+    font-weight: bold;
+}
+
+table {
+    border-bottom: 1px #eeeeee solid;
+    padding-bottom: 5px;
+}
+
 </style>
 </head>
 
@@ -178,8 +192,15 @@ button {
 		     <button type="submit">検索</button>
 		   </kensaku>
 		 </gakusei_johou>
-		 <p>科目情報を選択または学生情報を入力して検索ボタンをクリックしてください。</p>
-	</form>
+	</form><p>
+	
+	<p>氏名:</p>
+	<table>
+	  <th>科目名</th>
+	  <td style="padding-right: 40px;">科目コード</td>
+	  <td>回数</td>
+	  <td>点数</td>
+	</table>
 	</div>
 	<%@ include file="../footer.html"%>
 </body>
