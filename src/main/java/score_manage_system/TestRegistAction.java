@@ -42,7 +42,7 @@ public class TestRegistAction extends HttpServlet {
             session.setAttribute("point", point);
 
             // 適切なJSPページにリダイレクト
-            String redirectUrl = "seiseki_touroku_jsp.jsp";
+            String redirectUrl = "seiseki_touroku.jsp";
             response.sendRedirect(redirectUrl);
         } else {
             // 登録が失敗した場合
