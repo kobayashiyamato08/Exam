@@ -29,7 +29,7 @@ h1 {
 	padding-left: 10px;
 }
 
-seiseki_kanri {
+kamoku_johou {
     display: inline-block;
 	border: 2px solid #eeeeee;
 	border-radius: 1vh;
@@ -54,6 +54,15 @@ kaisu {
     display: inline-block;
 }
 
+gakusei_johou {
+    display: inline-block;
+	border: 2px solid #eeeeee;
+	border-radius: 1vh;
+	padding: 40px;
+	padding-top: 10px;
+	width: 520px;
+}
+
 button {
     width: 50px;
 	padding: 10px;
@@ -65,6 +74,10 @@ button {
 	border-radius: 1vh;
 }
 
+th {
+    padding-right: 150px;
+}
+
 td {
     padding-left: 65px;
     font-weight: bold;
@@ -74,14 +87,16 @@ table {
     border-bottom: 1px #eeeeee solid;
     padding-bottom: 5px;
 }
+
 </style>
 </head>
 
 <body>
 	<menu><%@ include file="menu.jsp"%></menu>
-	<form action="seiseki_kensaku.jsp">
-	<h1>成績管理</h1>
-	  <seiseki_kanri> 
+	<div>
+	<form action="kamokubetsu_ichiran.jsp">
+	<h1>成績参照</h1>
+	  <kamoku_johou> 
 		  <nyugaku>
 		    <label>入学年度</label><br>
 		      <select style="width: 100px; height: 30px;" required />
@@ -151,7 +166,8 @@ table {
 			   <option value="kamoku_5">科目5</option>
 		     </select> 
 		   </kamoku>
-		   
+	 </form>
+	
 		   <kaisu>
 		     <label>回数</label><br>
 		     <select style="width: 100px; height: 30px;" required />
@@ -164,16 +180,28 @@ table {
 		   <kensaku>
 		     <button type="submit">検索</button>
 		   </kensaku>
-		 </seiseki_kanri>
-		 <p>科目:</p>
-        <table>
-	      <th>入学年度</th>
-	      <td>学生番号</td>
-	      <td>氏名</td>
-	      <td>クラス</td>
-	      <td>在学中</td>
-	    </table>
-	</form>
+		 </kamoku_johou>
+     <form action="gakuseibetsu_ichiran.jsp">
+		 <gakusei_johou>
+		   <gakusei_bangou>
+		     <label>学生番号</label><br>
+		     <input type="text" name="gakusei_bangou" placeholder="学生番号を入力してください" style="width: 200px; height: 25px;" required />
+		   </gakusei_bangou>
+		   
+		   <kensaku>
+		     <button type="submit">検索</button>
+		   </kensaku>
+		 </gakusei_johou>
+	</form><p>
+	
+	<p>氏名:</p>
+	<table>
+	  <th>科目名</th>
+	  <td style="padding-right: 40px;">科目コード</td>
+	  <td>回数</td>
+	  <td>点数</td>
+	</table>
+	</div>
+	<%@ include file="../footer.html"%>
 </body>
-<%@ include file="../footer.html"%>
 </html>

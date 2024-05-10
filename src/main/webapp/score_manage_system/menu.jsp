@@ -23,7 +23,7 @@ ul{
 		<p></p>
 		<label>成績管理</label>
 		<p></p>
-		<li><a href="seiseki_touroku.jsp">成績登録</a></li>
+		<li><a href="seiseki_ichiran.jsp">成績登録</a></li>
 		<p></p>
 		<li><a href="seiseki_sansyo.jsp">成績参照</a></li>
 		<p></p>

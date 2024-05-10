@@ -141,7 +141,7 @@ table {
 	  <td>在学中</td>
 	</table>
 	
-	
+	<a href="gakusei_henkou.jsp">変更</a>
 </body>
 <%@ include file="../footer.html"%>
 </html>
