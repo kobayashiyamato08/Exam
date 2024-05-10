@@ -11,26 +11,6 @@ body {
 	box-sizing: border-box;
 }
 
-header {
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 60px;
-				padding: 20px;
-				background-color: #31a9ee;
-				font-size: 15px;
-			}
-
-.logout-btn {
-  background-color: #fff;
-  color: #333;
-  border: none;
-  padding: 5px 10px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 menu {
 	min-width: 600px;
 	margin-top: 100px;
@@ -85,6 +65,15 @@ button {
 	border-radius: 1vh;
 }
 
+td {
+    padding-left: 65px;
+    font-weight: bold;
+}
+
+table {
+    border-bottom: 1px #eeeeee solid;
+    padding-bottom: 5px;
+}
 </style>
 </head>
 <body>
@@ -142,7 +131,17 @@ button {
 		     <button type="submit">絞込み</button>
 		   </sibori>
 		 </gakusei>
-	</from>
+	</from><p>
+	<p>検索結果:</p>
+	<table>
+	  <th>入学年度</th>
+	  <td>学生番号</td>
+	  <td>氏名</td>
+	  <td>クラス</td>
+	  <td>在学中</td>
+	</table>
+	
+	
 </body>
 <%@ include file="../footer.html"%>
 </html>

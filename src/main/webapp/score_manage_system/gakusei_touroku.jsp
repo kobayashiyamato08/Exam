@@ -72,7 +72,7 @@ button {
 </head>
 <body>
   <menu><%@ include file="./menu.jsp" %></menu>
-  <form action="main.jsp">
+  <form action="gakusei_ichiran.jsp">
     <h1>学生情報登録</h1>
     <nyugaku>
       <label>入学年度</label><br>
