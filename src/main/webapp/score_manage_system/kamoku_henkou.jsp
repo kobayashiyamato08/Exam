@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+<%@ include file="../header.html"%>
 <head>
 <meta charset="UTF-8">
 <style>
@@ -45,7 +46,7 @@ button {
 	border-radius: 100vh;
 }
 </style>
-<h1>科目変更</h1>
+<h1>科目情報変更</h1>
 <%@ include file="./kamoku_menu.jsp"%>
 <br>
 </head>

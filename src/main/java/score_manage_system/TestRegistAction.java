@@ -45,6 +45,7 @@ public class TestRegistAction extends HttpServlet {
             String redirectUrl = "seiseki_touroku.jsp";
             response.sendRedirect(redirectUrl);
         } else {
+        	return;
             // 登録が失敗した場合
             // エラーハンドリングを行うなどの処理を追加
         }

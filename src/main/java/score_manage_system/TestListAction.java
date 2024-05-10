@@ -27,3 +27,4 @@ public class TestListAction extends Action {
         return "kamokubetsu_ichiran.jsp";
     }
 }
+
