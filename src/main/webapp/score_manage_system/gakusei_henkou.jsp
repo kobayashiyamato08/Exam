@@ -29,31 +29,6 @@ h1 {
 	padding-left: 10px;
 }
 
-sinki {
-    padding-left: 530px;
-}
-
-gakusei {
-    display: inline-block;
-	border: 2px solid #eeeeee;
-	border-radius: 1vh;
-	padding: 40px;
-	padding-top: 10px;
-	width: 520px;	
-}
-
-nyugaku{
-    display: inline-block;
-}
-
-class{
-    display: inline-block;
-}
-
-zaigaku{
-    display: inline-block;
-}
-
 button {
     width: 60px;
 	padding: 10px;
@@ -65,63 +40,42 @@ button {
 	border-radius: 1vh;
 }
 
+input {
+    width: 590px;
+    height: 35px;
 </style>
 </head>
 <body>
 	<menu><%@ include file="./menu.jsp"%></menu>
-	<form action="gakusei_siborikomi.jsp">
-		<h1>学生管理</h1>
-		<sinki>
-		  <a href="gakusei_touroku.jsp">新規登録</a><br>
-		</sinki>
-		<gakusei> 
-		  <nyugaku>
-		    <label>入学年度</label><br>
-		      <select style="width: 180px; height: 30px;" required />
-			    <option value="" selected>------</option>
-			    <option value="2014">2014</option>
-				<option value="2015">2015</option>
-				<option value="2016">2016</option>
-				<option value="2017">2017</option>
-				<option value="2018">2018</option>
-				<option value="2019">2019</option>
-				<option value="2020">2020</option>
-				<option value="2021">2021</option>
-				<option value="2022">2022</option>
-				<option value="2023">2023</option>
-				<option value="2024">2024</option>
-				<option value="2025">2025</option>
-				<option value="2026">2026</option>
-				<option value="2027">2027</option>
-				<option value="2028">2028</option>
-				<option value="2029">2029</option>
-				<option value="2030">2030</option>
-				<option value="2031">2031</option>
-				<option value="2032">2032</option>
-				<option value="2033">2033</option>
-				<option value="2034">2034</option>
-		      </select> 
-		   </nyugaku>
-		   
-		   <class>
-		    <label>クラス</label><br>
-		      <select style="width: 180px; height: 30px;" required />
-			    <option value="" selected>-------</option>
-			    <option value="131">131</option>
-			    <option value="101">101</option>
-			    <option value="201">201</option>
-		      </select> 
-		   </class>
-		   
-		   <zaigaku>
-		     <input type="checkbox">
-		     <label>在学中</label>
-		   </zaigaku>
-		   
-		   <sibori>
-		     <button type="submit">絞込み</button>
-		   </sibori>
-		 </gakusei>
+	<form action="gakusei_ichiran.jsp">
+		<h1>学生情報変更</h1>
+		
+		<nyugaku>
+		  <label>入学年度</label>
+		  
+		</nyugaku><p>
+		
+		<bangou>
+		  <label>学生番号</label>
+		  
+		</bangou><p>
+		
+		<simei>
+		  <label>氏名</label><br>
+          <input type="text" name="id" placeholder="氏名を入力してください" required />
+		</simei><p>
+		
+		<class>
+          <label>クラス</label><br>
+	       <select style="width: 600px; height: 40px;" required />
+	         <option value="" selected>-------</option>
+		     <option value="131">131</option>
+			 <option value="101">101</option>
+			 <option value="201">201</option>
+		   </select>
+	    </class><p>
+		<button type="buttton">変更</button><p></p>
+	    <a href="gakusei_ichiran.jsp">戻る</a>
 	</from>
 </body>
 <%@ include file="../footer.html"%>
