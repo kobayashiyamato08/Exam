@@ -47,7 +47,7 @@ input {
 </head>
 <body>
 	<menu><%@ include file="./menu.jsp"%></menu>
-	<form action="gakusei_ichiran.jsp">
+	<form action="gakusei_henkou_succes.jsp">
 		<h1>学生情報変更</h1>
 		
 		<nyugaku>

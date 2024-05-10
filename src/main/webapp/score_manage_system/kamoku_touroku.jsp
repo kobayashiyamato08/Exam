@@ -62,7 +62,7 @@ button {
 </head>
 <body>
   <menu><%@ include file="./menu.jsp" %></menu>
-  <form action="kamoku_ichiran.jsp">
+  <form action="kamoku_touroku_succes.jsp">
     <h1>科目登録</h1>
     
     <kamoku_code>
