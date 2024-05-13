@@ -62,7 +62,7 @@ button {
 </head>
 <body>
   <menu><%@ include file="./menu.jsp" %></menu>
-  <form action="../score_manage_system/SubjectUpdateExcute.action" method="post">
+  <form action="../score_manage_system/SubjectUpdateExecute.action" method="post">
     <h1>科目情報変更</h1>
     
     <kamoku_code>
