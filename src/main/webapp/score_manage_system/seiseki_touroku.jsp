@@ -168,7 +168,7 @@ table {
 		 </seiseki_kanri>
      </form>
      
-     <form>
+     <form action="seiseki_touroku_succes.jsp">
 		 <p>科目:</p>
         <table>
 	      <th>入学年度</th>
