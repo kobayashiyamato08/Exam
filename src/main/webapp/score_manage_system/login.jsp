@@ -41,9 +41,8 @@ button {
 	border-radius: 100vh;
 }
 </style>
-<center>
-	<form action="LoginExecute.action" method="post">
-		<body>
+<center>		
+<body>
 	<form action="../score_manage_system/LoginExecute.action" method="post">
 		<h1>ログイン画面</h1>
 		<body>
@@ -55,8 +54,9 @@ button {
 			</div>
 			<br>
 			<button type="submit">ログイン</button>
-		</body>
+
 	</form>
+</body>
 </center>
 	<%@ include file="../footer.html"%>
 </html>
