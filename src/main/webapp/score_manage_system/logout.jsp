@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+<%@ include file="../header.html"%>
 <head>
 <meta charset="UTR-8">
 <style>
@@ -12,10 +13,6 @@ form {
 
 h1 {
 	font-size: 40px;
-}
-
-p {
-	font-size: 20px;
 }
 
 body {
@@ -44,4 +41,5 @@ button {
 </body>
 </form>
 </center>
+<%@ include file="../footer.html"%>
 </html>

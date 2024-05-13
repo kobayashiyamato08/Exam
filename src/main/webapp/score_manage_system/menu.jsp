@@ -28,7 +28,8 @@ ul{
 		<li><a href="seiseki_sansyo.jsp">成績参照</a></li>
 		<p></p>
 		<a href="kamoku_ichiran.jsp">科目管理</a>
-		<p></p>
+		<p></p><br>
+		<a href="logout.jsp">ログアウト</a>
 	</ul>
 </body>
 </html>
