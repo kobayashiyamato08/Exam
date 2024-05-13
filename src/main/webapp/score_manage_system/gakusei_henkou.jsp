@@ -43,6 +43,18 @@ button {
 input {
     width: 590px;
     height: 35px;
+}
+
+nyugaku {
+    display: inline-block;
+    padding-bottom :15px;
+}
+
+bangou {
+    display: inline-block;
+    padding-bottom :15px;
+}
+
 </style>
 </head>
 <body>

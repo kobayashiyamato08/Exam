@@ -42,9 +42,8 @@ a {
 <body>
   <menu><%@ include file="./menu.jsp" %></menu>
   <form action="gakusei_touroku_succes.jsp">
-    <h1>科目情報登録</h1>
-    <center><kanryo>登録が完了しました</kanryo></center><p>
-	<a href="kamoku_touroku.jsp">戻る</a>
+    <h1>科目情報削除</h1>
+    <center><kanryo>削除が完了しました</kanryo></center><p>
 	<a href="kamoku_ichiran.jsp">科目一覧</a>
   </form>
 </body>
