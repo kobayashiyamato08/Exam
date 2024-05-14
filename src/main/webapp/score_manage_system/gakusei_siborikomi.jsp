@@ -137,7 +137,7 @@ table {
 
 	<p>検索結果:</p>
 	<table>
-<<<<<<< HEAD
+
 		<tr>
 		<td>入学年度</td>
 		<td>学生番号</td>
@@ -156,7 +156,7 @@ table {
 			</c:forEach>
 		</table>
 	</form>
-=======
+
 	  <th>入学年度</th>
 	  <td>学生番号</td>
 	  <td>氏名</td>
@@ -165,7 +165,7 @@ table {
 	</table>
 	
 	<a href="gakusei_henkou.jsp">変更</a>
->>>>>>> branch 'master' of https://github.com/kobayashiyamato08/Exam
+
 </body>
 <%@ include file="../footer.html"%>
 </html>
