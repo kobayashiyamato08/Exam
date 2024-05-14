@@ -126,7 +126,7 @@ table {
 		   </class>
 		   
 		   <zaigaku>
-		     <input type="checkbox" name="isattend">
+		     <input type="checkbox" name="isattend" value="true">
 		     <label>在学中</label>
 		   </zaigaku>
 		   
@@ -156,12 +156,6 @@ table {
 			</c:forEach>
 		</table>
 	</form>
-
-	  <th>入学年度</th>
-	  <td>学生番号</td>
-	  <td>氏名</td>
-	  <td>クラス</td>
-	  <td>在学中</td>
 	</table>
 	
 	<a href="gakusei_henkou.jsp">変更</a>
