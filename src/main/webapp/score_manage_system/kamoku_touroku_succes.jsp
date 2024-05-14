@@ -29,24 +29,22 @@ h1 {
 	padding-left: 10px;
 }
 
-button {
-    width: 50px;
-	padding: 10px;
-	background-color: red;
-	color: #ffffff;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	border-radius: 1vh;
+kanryo {
+    background-color: #3cb371;
+    font-size: 18px;
+}
+
+a {
+    padding-right: 100px;
 }
 </style>
 </head>
 <body>
   <menu><%@ include file="./menu.jsp" %></menu>
-  <form action="kamoku_sakujo_succes.jsp">
-    <h1>科目情報削除</h1>
-    <p>を削除してもよろしいですか</p>
-    <button type="submit">削除</button><p>
+  <form action="gakusei_touroku_succes.jsp">
+    <h1>科目情報登録</h1>
+    <center><kanryo>登録が完了しました</kanryo></center><p>
+	<a href="kamoku_touroku.jsp">戻る</a>
 	<a href="kamoku_ichiran.jsp">科目一覧</a>
   </form>
 </body>

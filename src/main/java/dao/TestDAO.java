@@ -18,10 +18,6 @@ public class TestDAO extends DAO {
 	private Connection connection;
 	private String baseSql;
 	
-	public TestDAO(String basesql, String baseSql) {
-		this.baseSql = baseSql;
-	}
-	
 	public Connection getConnection() throws SQLException {
         if (connection == null || connection.isClosed()) {
             try {

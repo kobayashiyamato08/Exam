@@ -83,7 +83,7 @@ kamoku{
 		</gakusei>
 		<seiseki>
 		  <label>成績管理</label><br>
-		  <a href="seiseki_touroku.jsp">成績登録</a><br> 
+		  <a href="seiseki_ichiran.jsp">成績登録</a><br> 
 		  <a href="seiseki_sansyo.jsp">成績参照</a>
 		</seiseki>
 		<kamoku>

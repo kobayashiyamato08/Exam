@@ -65,11 +65,21 @@ button {
 	border-radius: 1vh;
 }
 
+td {
+    padding-left: 65px;
+    font-weight: bold;
+}
+
+table {
+    border-bottom: 1px #eeeeee solid;
+    padding-bottom: 5px;
+}
 </style>
 </head>
 
 <body>
 	<menu><%@ include file="menu.jsp"%></menu>
+	<div>
 	<form action="seiseki_kensaku.jsp">
 	<h1>成績管理</h1>
 	  <seiseki_kanri> 
@@ -156,7 +166,20 @@ button {
 		     <button type="submit">検索</button>
 		   </kensaku>
 		 </seiseki_kanri>
+     </form>
+     
+     <form action="seiseki_touroku_succes.jsp">
+		 <p>科目:</p>
+        <table>
+	      <th>入学年度</th>
+	      <td>学生番号</td>
+	      <td>氏名</td>
+	      <td>クラス</td>
+	      <td>在学中</td>
+	    </table>
+	    
+	    <button type="submit">登録</button>
 	</form>
-	<%@ include file="../footer.html"%>
 </body>
+<%@ include file="../footer.html"%>
 </html>

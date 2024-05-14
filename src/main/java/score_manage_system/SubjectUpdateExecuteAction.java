@@ -22,6 +22,6 @@ public class SubjectUpdateExecuteAction extends Action {
 		SubjectDAO dao=new SubjectDAO();
 		session.getAttribute("subject");
 		dao.SubjectUpdate(cd, name);
-		return "subject_update_done.jsp";
+		return "kamoku_henkou_succes.jsp";
 	}
 }

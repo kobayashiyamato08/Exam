@@ -15,10 +15,10 @@ public class Test implements java.io.Serializable {
 	public String getclassNum() {
 		return classNum;
 	}
-	public Subject getsubject() {
+	public Subject getSubject() {
 		return subject;
 	}
-	public School getschool() {
+	public School getSchool() {
 		return school;
 	}
 	public int getNo() {
@@ -27,11 +27,12 @@ public class Test implements java.io.Serializable {
 	public int getPoint() {
 		return point;
 	}
-	public void setStudent(Student student) {
-		this.student = student;
-	}
+
 	public void setclassNum(String classNum) {
 		this.classNum=classNum;
+	}
+	public void setStudent(Student student) {
+		this.student = student;
 	}
 	public void setSubject(Subject subject) {
 		this.subject = subject;

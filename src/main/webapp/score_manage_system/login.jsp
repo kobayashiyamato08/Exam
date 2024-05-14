@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <%@ page pageEncoding="UTF-8"%>
 <html>
 <%@ include file="../header.html"%>
