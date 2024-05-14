@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <%@ page pageEncoding="UTF-8"%>
 <html>
 <%@ include file="../header.html"%>
@@ -41,8 +41,9 @@ button {
 	border-radius: 100vh;
 }
 </style>
-<center>		
-<body>
+<center>
+	<form action="LoginExecute.action" method="post">
+		<body>
 	<form action="../score_manage_system/LoginExecute.action" method="post">
 		<h1>ログイン画面</h1>
 		<body>
@@ -54,9 +55,8 @@ button {
 			</div>
 			<br>
 			<button type="submit">ログイン</button>
-
+		</body>
 	</form>
-</body>
 </center>
 	<%@ include file="../footer.html"%>
 </html>
