@@ -59,6 +59,9 @@ button {
 	border-radius: 1vh;
 }
 </style>
+
+<h1>科目情報変更</h1>
+
 </head>
 <body>
   <menu><%@ include file="./menu.jsp" %></menu>

@@ -11,6 +11,26 @@ body {
 	box-sizing: border-box;
 }
 
+header {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 60px;
+				padding: 20px;
+				background-color: #31a9ee;
+				font-size: 15px;
+			}
+
+.logout-btn {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 5px 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 menu {
 	min-width: 600px;
 	margin-top: 100px;
