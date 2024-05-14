@@ -62,7 +62,11 @@ button {
 </head>
 <body>
   <menu><%@ include file="./menu.jsp" %></menu>
+<<<<<<< HEAD
   <form action="SubjectUpdateExecute.action" method="post">
+=======
+  <form action="../score_manage_system/SubjectUpdateExecute.action" method="post">
+>>>>>>> branch 'master' of https://github.com/kobayashiyamato08/Exam.git
     <h1>科目情報変更</h1>
     
     <kamoku_code>
