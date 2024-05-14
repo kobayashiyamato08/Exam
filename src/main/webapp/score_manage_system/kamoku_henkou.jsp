@@ -70,7 +70,6 @@ button {
     
     <kamoku_code>
       <label>科目コード</label>
-      
     </kamoku_code><p>
     
     <simei>
