@@ -144,7 +144,7 @@ table {
 		   </class>
 		   
 		   <zaigaku>
-		     <input type="checkbox" name="isattend">
+		     <input type="checkbox" name="isattend" value="true">
 		     <label>在学中</label>
 		   </zaigaku>
 		   
@@ -152,10 +152,9 @@ table {
 		     <button type="submit">絞込み</button>
 		   </sibori>
 		 </gakusei>
-<<<<<<< HEAD
+
 	</form>
-=======
-	</from><p>
+	</from>
 	<p>検索結果:</p>
 	<table>
 	  <th>入学年度</th>
@@ -166,7 +165,7 @@ table {
 	</table>
 	
 	<a href="gakusei_henkou.jsp">変更</a>
->>>>>>> branch 'master' of https://github.com/kobayashiyamato08/Exam
+
 </body>
 <%@ include file="../footer.html"%>
 </html>
