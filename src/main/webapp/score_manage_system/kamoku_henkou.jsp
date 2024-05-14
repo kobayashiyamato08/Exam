@@ -59,13 +59,10 @@ button {
 	border-radius: 1vh;
 }
 </style>
-
-<h1>科目情報変更</h1>
-
 </head>
 <body>
   <menu><%@ include file="./menu.jsp" %></menu>
-  <form action="../score_manage_system/SubjectUpdateExecute.action" method="post">
+  <form action="kamoku_henkou_succes.jsp" method="post">
     <h1>科目情報変更</h1>
     
     <kamoku_code>
