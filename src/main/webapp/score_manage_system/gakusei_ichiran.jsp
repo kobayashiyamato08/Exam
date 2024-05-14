@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	
 <!DOCTYPE html>
 <html>
 <%@ include file="../header.html"%>
@@ -69,7 +70,7 @@ button {
 </head>
 <body>
 	<menu><%@ include file="./menu.jsp"%></menu>
-	<form action="gakusei_siborikomi.jsp">
+	<form action="StudentList.action" method=post>
 		<h1>学生管理</h1>
 		<sinki>
 		  <a href="gakusei_touroku.jsp">新規登録</a><br>
@@ -77,44 +78,44 @@ button {
 		<gakusei> 
 		  <nyugaku>
 		    <label>入学年度</label><br>
-		      <select style="width: 180px; height: 30px;" required />
+		      <select style="width: 180px; height: 30px;" name="entyear" required />
 			    <option value="" selected>------</option>
-			    <option value="2014">2014</option>
-				<option value="2015">2015</option>
-				<option value="2016">2016</option>
-				<option value="2017">2017</option>
-				<option value="2018">2018</option>
-				<option value="2019">2019</option>
-				<option value="2020">2020</option>
-				<option value="2021">2021</option>
-				<option value="2022">2022</option>
-				<option value="2023">2023</option>
-				<option value="2024">2024</option>
-				<option value="2025">2025</option>
-				<option value="2026">2026</option>
-				<option value="2027">2027</option>
-				<option value="2028">2028</option>
-				<option value="2029">2029</option>
-				<option value="2030">2030</option>
-				<option value="2031">2031</option>
-				<option value="2032">2032</option>
-				<option value="2033">2033</option>
-				<option value="2034">2034</option>
+			    <option value=2014 name="entyear">2014</option>
+				<option value=2015 name="entyear">2015</option>
+				<option value=2016 name="entyear">2016</option>
+				<option value=2017 name="entyear">2017</option>
+				<option value=2018 name="entyear">2018</option>
+				<option value=2019 name="entyear">2019</option>
+				<option value=2020 name="entyear">2020</option>
+				<option value=2021 name="entyear">2021</option>
+				<option value=2022 name="entyear">2022</option>
+				<option value=2023 name="entyear">2023</option>
+				<option value=2024 name="entyear">2024</option>
+				<option value=2025 name="entyear">2025</option>
+				<option value=2026 name="entyear">2026</option>
+				<option value=2027 name="entyear">2027</option>
+				<option value=2028 name="entyear">2028</option>
+				<option value=2029 name="entyear">2029</option>
+				<option value=2030 name="entyear">2030</option>
+				<option value=2031 name="entyear">2031</option>
+				<option value=2032 name="entyear">2032</option>
+				<option value=2033 name="entyear">2033</option>
+				<option value=2034 name="entyear">2034</option>
 		      </select> 
 		   </nyugaku>
 		   
 		   <class>
 		    <label>クラス</label><br>
-		      <select style="width: 180px; height: 30px;" required />
+		      <select style="width: 180px; height: 30px;" name="classnum" required />
 			    <option value="" selected>-------</option>
-			    <option value="131">131</option>
-			    <option value="101">101</option>
-			    <option value="201">201</option>
+			    <option value="131" name="classnum">131</option>
+			    <option value="101" name="classnum">101</option>
+			    <option value="201" name="classnum">201</option>
 		      </select> 
 		   </class>
 		   
 		   <zaigaku>
-		     <input type="checkbox">
+		     <input type="checkbox" name="isattend">
 		     <label>在学中</label>
 		   </zaigaku>
 		   
@@ -122,7 +123,7 @@ button {
 		     <button type="submit">絞込み</button>
 		   </sibori>
 		 </gakusei>
-	</from>
+	</form>
 </body>
 <%@ include file="../footer.html"%>
 </html>

@@ -9,7 +9,6 @@ import java.util.List;
 
 import bean.School;
 import bean.Student;
-import bean.Teacher;
 
 public class StudentDAO extends DAO {
 //	basesqlの呼び出し
@@ -45,7 +44,7 @@ public class StudentDAO extends DAO {
 	    return filteredStudents;
 	}
 //	学生テーブルの情報を表示する操作StudentListメソッドを定義
-	public List<Student> StudentList(int ent_year,String class_num,boolean is_attend)
+	public List<Student> StudentList(int entyear,String classnum,boolean isattend)
 	throws Exception {
 		List<Student> list=new ArrayList<>();
 //		SQL文で全情報を表示する
@@ -53,9 +52,9 @@ public class StudentDAO extends DAO {
 		BaseSql="SELECT * FROM STUDENT WHERE ENT_YEAR = ? AND CLASS_NUM = ? AND IS_ATTEND = ?";
 		PreparedStatement st=con.prepareStatement(BaseSql);
 //		学生情報を以下の要素をセレクトして表示するように値をセット
-		st.setInt(1, ent_year);
-		st.setString(2, class_num);
-		st.setBoolean(3, is_attend);
+		st.setInt(1, entyear);
+		st.setString(2, classnum);
+		st.setBoolean(3, isattend);
 
 //		上記のSQLを実行
 		ResultSet rs=st.executeQuery();
@@ -68,6 +67,7 @@ public class StudentDAO extends DAO {
 			s.setName(rs.getString("name"));
 			s.setClassNum(rs.getString("class_num"));
 			s.setIsAttend(rs.getBoolean("is_attend"));
+			list.add(s);
 		}
 		
 //		データベースの接続を切る
@@ -78,15 +78,15 @@ public class StudentDAO extends DAO {
 	}
 	
 //	学生テーブルに新たに情報を追加する操作
-	public List<Student> StudentCreate(String no,String name,int ent_year,String class_num,Teacher teacher) 
+	public List<Student> StudentCreate(String no,String name,int ent_year,String class_num, boolean is_attend) 
 		throws Exception {
 		
 		List<Student> list=new ArrayList<>();
 		Connection con = getConnection(); 
-		BaseSql="INSERT INTO STUDENT (NO,NAME,ENT_YEAR,CLASS_NUM,IS_ATTEND,SCHOOL_CD) VALUES (?,?,?,?,?,?)";
+		BaseSql="INSERT INTO STUDENT (NO,NAME,ENT_YEAR,CLASS_NUM,IS_ATTEND) VALUES (?,?,?,?,?)";
 		PreparedStatement st=con.prepareStatement(BaseSql);
 		Student s=new Student();
-		Teacher t=new Teacher();
+//		Teacher t=new Teacher();
 		
 //		在学中、学校名をDBから自動的に登録できるようにしたいが、よくわからない
 		st.setString(1,s.getNo());
@@ -144,6 +144,7 @@ public class StudentDAO extends DAO {
     	public boolean delete(Student student) {
 			return true;
     	}
+
     }
     
     

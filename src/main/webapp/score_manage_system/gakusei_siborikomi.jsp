@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+
 <!DOCTYPE html>
 <html>
 <%@ include file="../header.html"%>
@@ -78,7 +81,7 @@ table {
 </head>
 <body>
 	<menu><%@ include file="./menu.jsp"%></menu>
-	<form action="gakusei_siborikomi.jsp">
+	<form action="StudentList.action" method=post>
 		<h1>学生管理</h1>
 		<sinki>
 		  <a href="gakusei_touroku.jsp">新規登録</a><br>
@@ -86,7 +89,7 @@ table {
 		<gakusei> 
 		  <nyugaku>
 		    <label>入学年度</label><br>
-		      <select style="width: 180px; height: 30px;" required />
+		      <select style="width: 180px; height: 30px;" name="entyear" required />
 			    <option value="" selected>------</option>
 			    <option value="2014">2014</option>
 				<option value="2015">2015</option>
@@ -114,7 +117,7 @@ table {
 		   
 		   <class>
 		    <label>クラス</label><br>
-		      <select style="width: 180px; height: 30px;" required />
+		      <select style="width: 180px; height: 30px;" name="classnum" required />
 			    <option value="" selected>-------</option>
 			    <option value="131">131</option>
 			    <option value="101">101</option>
@@ -123,7 +126,7 @@ table {
 		   </class>
 		   
 		   <zaigaku>
-		     <input type="checkbox">
+		     <input type="checkbox" name="isattend">
 		     <label>在学中</label>
 		   </zaigaku>
 		   
@@ -131,17 +134,27 @@ table {
 		     <button type="submit">絞込み</button>
 		   </sibori>
 		 </gakusei>
-	</from><p>
+
 	<p>検索結果:</p>
 	<table>
-	  <th>入学年度</th>
-	  <td>学生番号</td>
-	  <td>氏名</td>
-	  <td>クラス</td>
-	  <td>在学中</td>
-	</table>
-	
-	
+		<tr>
+		<td>入学年度</td>
+		<td>学生番号</td>
+		<td>氏名</td>
+		<td>クラス</td>
+		<td>在学中</td>
+		</tr>
+			<c:forEach var="s" items="${list}">
+				<tr>
+ 				<td>${s.entYear}</td>
+				<td>${s.no}</td>
+			 	<td>${s.name}</td>
+				<td>${s.classNum}</td>
+				<td>${s.isAttend}</td>
+				</tr>
+			</c:forEach>
+		</table>
+	</form>
 </body>
 <%@ include file="../footer.html"%>
 </html>
