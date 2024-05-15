@@ -89,10 +89,10 @@ public class StudentDAO extends DAO {
 //		Teacher t=new Teacher();
 		
 //		在学中、学校名をDBから自動的に登録できるようにしたいが、よくわからない
-		st.setString(1,s.getNo());
-		st.setString(2,s.getName());
-		st.setInt(3,s.getEntYear());
-		st.setString(4,s.getClassNum());
+		st.setString(1,no);
+		st.setString(2,name);
+		st.setInt(3,ent_year);
+		st.setString(4,class_num);
 		st.setBoolean(5,true);
 //		st.setSchool(6,t.getSchool());
 		
@@ -114,9 +114,9 @@ public class StudentDAO extends DAO {
 		PreparedStatement st=con.prepareStatement(BaseSql);
 		Student s=new Student();
 		
-		st.setString(1,s.getName());
-		st.setString(2, s.getClassNum());
-		st.setBoolean(3, s.getIsAttend());
+		st.setString(1,name);
+		st.setString(2, class_num);
+		st.setBoolean(3, is_attend);
 		
 		st.executeUpdate();
 		

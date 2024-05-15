@@ -72,11 +72,11 @@ button {
 </head>
 <body>
   <menu><%@ include file="./menu.jsp" %></menu>
-  <form action="gakusei_touroku_succes.jsp">
+  <form action="StudentCreateExecute.action">
     <h1>学生情報登録</h1>
     <nyugaku>
       <label>入学年度</label><br>
-	    <select style="width: 600px; height: 40px;" required />
+	    <select style="width: 600px; height: 40px;" name="entyear" required />
 	      <option value="" selected>------</option>
 		  <option value="2014">2014</option>
 	   	  <option value="2015">2015</option>
@@ -104,24 +104,24 @@ button {
     
     <bangou>
       <label>学生番号</label><br>
-      <input type="text" name="id" placeholder="学生番号を入力してください" required />
+      <input type="text" name="no" placeholder="学生番号を入力してください" required />
     </bangou>
     
     <simei>
       <label>氏名</label><br>
-      <input type="text" name="id" placeholder="氏名を入力してください" required />
+      <input type="text" name="name" placeholder="氏名を入力してください" required />
     </simei>
     
     <class>
       <label>クラス</label><br>
-	    <select style="width: 600px; height: 40px;" required />
+	    <select style="width: 600px; height: 40px;" name="classnum" required />
 	      <option value="" selected>-------</option>
 		    <option value="131">131</option>
 			<option value="101">101</option>
 			<option value="201">201</option>
 		</select>
 	</class><br>
-	<button type="buttton">登録して終了</button><p></p>
+	<button type="submit">登録して終了</button><p></p>
 	<a href="gakusei_ichiran.jsp">戻る</a>
   </form>
 </body>

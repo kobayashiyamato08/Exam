@@ -15,12 +15,14 @@ public class SubjectListAction extends Action {
 		) throws Exception {
 		HttpSession session = request.getSession();
 		
+		
+		
 //		SubjectDAOを呼び出し、科目の表示を実行する
 		SubjectDAO dao=new SubjectDAO();
 		List<Subject> list=dao.SubjectList(null, null);
 		
-		session.setAttribute("list", list);
+		session.setAttribute("subjects", list);
 		
-		return "subject_list.jsp";
+		return "kamoku_ichiran.jsp";
 	}
 }

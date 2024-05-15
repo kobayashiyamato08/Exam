@@ -50,9 +50,9 @@ public class SubjectDAO extends DAO {
 		List<Subject> list=new ArrayList<>();
 //		SQL文を実行
 		Connection con = getConnection();
-		PreparedStatement st=con.prepareStatement("SELECT CD,NAME FROM SUBJECT");
-		st.setString(1, cd);
-		st.setString(2, name);
+		PreparedStatement st=con.prepareStatement("SELECT * FROM SUBJECT");
+//		st.setString(1, cd);
+//		st.setString(2, name);
 		ResultSet rs=st.executeQuery();
 		
 //		情報を取得し表示、次の行の生成をデータがなくなるまで行う
@@ -60,6 +60,7 @@ public class SubjectDAO extends DAO {
 			Subject s = new Subject();
 			s.setCd(rs.getString("cd"));
 			s.setName(rs.getString("name"));
+			list.add(s);
 		}
 		
 //		データベースの接続を切る
@@ -76,7 +77,7 @@ public class SubjectDAO extends DAO {
 		Connection con = getConnection();
 		PreparedStatement st=con.prepareStatement("INSERT INTO SBJECT (SCHOOL_CD,CD,NAME) VALUES(?,?,?)");
 		Subject s=new Subject();
-		Teacher t=new Teacher();
+//		Teacher t=new Teacher();
 		
 //		st.setSchool(1,getSchool());
 		st.setString(2,s.getCd());

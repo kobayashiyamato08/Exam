@@ -87,7 +87,7 @@ kamoku{
 		  <a href="seiseki_sansyo.jsp">成績参照</a>
 		</seiseki>
 		<kamoku>
-		  <a href="kamoku_ichiran.jsp">科目管理</a>
+		  <a href="SubjectList.action">科目管理</a>
 		</kamoku>
 	  </main_menu>
 	</div>

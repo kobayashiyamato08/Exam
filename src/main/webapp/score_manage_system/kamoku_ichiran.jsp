@@ -2,6 +2,7 @@
 <%@ page pageEncoding="UTF-8"%>
 <html>
 <%@ include file="../header.html"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <head>
 <meta charset="UTR-8">
 <style>
@@ -79,41 +80,15 @@ rika {
 	  <th>科目コード</th>
 	  <td>科目名</td>
 	</table><br>
+
+	<c:forEach var="subject" items="${subjects}">
+		<tr>
+			<th>${subject.cd}</th>
+			<th>${subject.name}</th><br>
+		</tr>
+	</c:forEach>
 	
-	<japanese>
-	  <label>A02</label>
-	  <kamoku>国語</kamoku>
-	  <a href="kamoku_henkou.jsp">変更</a>
-	  <a href="kamoku_sakujo.jsp">削除</a>
-	</japanese><p>
-	
-	<sugaku>
-	  <label>B02</label>
-	  <kamoku>数学</kamoku>
-	  <a href="kamoku_henkou.jsp">変更</a>
-	  <a href="kamoku_sakujo.jsp">削除</a>
-	</sugaku><p>
-	
-	<eigo>
-	  <label>C02</label>
-	  <kamoku style="padding-right: 43px;">英語コミュニケーション概論</kamoku>
-	  <a href="kamoku_henkou.jsp">変更</a>
-	  <a href="kamoku_sakujo.jsp">削除</a>
-	</eigo><p>
-	
-	<rika>
-	  <label>D02</label>
-	  <kamoku>理科</kamoku>
-	  <a href="kamoku_henkou.jsp">変更</a>
-	  <a href="kamoku_sakujo.jsp">削除</a>
-	</rika><p>
-	
-	<johou>
-	  <label>E02</label>
-	  <kamoku style="padding-right: 110px;">情報処理基礎知識１</kamoku>
-	  <a href="kamoku_henkou.jsp">変更</a>
-	  <a href="kamoku_sakujo.jsp">削除</a>
-	</johou>
+
   </div>
 </body>
 <%@ include file="../footer.html"%>
