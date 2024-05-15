@@ -102,7 +102,7 @@ table {
 	<form action="StudentList.action" method=post>
 		<h1>学生管理</h1>
 		<sinki>
-		  <a href="gakusei_touroku.jsp">新規登録</a><br>
+		  <a href="StudentCreate.action">新規登録</a><br>
 		</sinki>
 		<gakusei> 
 		  <nyugaku>
