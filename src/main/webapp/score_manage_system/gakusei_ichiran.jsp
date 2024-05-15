@@ -95,6 +95,10 @@ table {
     border-bottom: 1px #eeeeee solid;
     padding-bottom: 5px;
 }
+
+th {
+    
+}
 </style>
 </head>
 <body>
@@ -154,15 +158,6 @@ table {
 		 </gakusei>
 
 	</form>
-	</from>
-	<p>検索結果:</p>
-	<table>
-	  <th>入学年度</th>
-	  <td>学生番号</td>
-	  <td>氏名</td>
-	  <td>クラス</td>
-	  <td>在学中</td>
-	</table>
 	
 	<a href="gakusei_henkou.jsp">変更</a>
 
