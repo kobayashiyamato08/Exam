@@ -41,7 +41,7 @@ a {
 </head>
 <body>
   <menu><%@ include file="./menu.jsp" %></menu>
-  <form action="gakusei_touroku_succes.jsp">
+  <form action="StudentCreateExecute.action">
     <h1>学生情報登録</h1>
     <center><kanryo>登録が完了しました</kanryo></center><p>
 	<a href="gakusei_touroku.jsp">戻る</a>

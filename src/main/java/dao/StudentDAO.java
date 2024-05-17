@@ -78,7 +78,7 @@ public class StudentDAO extends DAO {
 	}
 	
 //	学生テーブルに新たに情報を追加する操作
-	public List<Student> StudentCreate(String no,String name,int ent_year,String class_num, boolean is_attend) 
+	public List<Student> StudentCreate(String no,String name,int entyear,String classnum, boolean isattend) 
 		throws Exception {
 		
 		List<Student> list=new ArrayList<>();
@@ -91,8 +91,8 @@ public class StudentDAO extends DAO {
 //		在学中、学校名をDBから自動的に登録できるようにしたいが、よくわからない
 		st.setString(1,no);
 		st.setString(2,name);
-		st.setInt(3,ent_year);
-		st.setString(4,class_num);
+		st.setInt(3,entyear);
+		st.setString(4,classnum);
 		st.setBoolean(5,true);
 //		st.setSchool(6,t.getSchool());
 		
@@ -114,9 +114,9 @@ public class StudentDAO extends DAO {
 		PreparedStatement st=con.prepareStatement(BaseSql);
 		Student s=new Student();
 		
-		st.setString(1,name);
-		st.setString(2, class_num);
-		st.setBoolean(3, is_attend);
+		st.setString(1,s.getName());
+		st.setString(2, s.getClassNum());
+		st.setBoolean(3, s.getIsAttend());
 		
 		st.executeUpdate();
 		

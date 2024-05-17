@@ -7,6 +7,6 @@ public class StudentCreateAction extends Action {
 		HttpServletRequest request,HttpServletResponse response
 		) throws Exception {
 			request.getSession();
-			return "student_create.jsp";
+			return "gakusei_touroku.jsp";
 	}
 }
